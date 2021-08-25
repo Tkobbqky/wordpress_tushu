@@ -1,0 +1,592 @@
+Python+Spark 2.0+Hadoop机器学习与大数据实战 PDF下载 林大贵 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730249073
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730249073
+<p>书名:Python+Spark 2.0+Hadoop机器学习与大数据实战</p><p>作者:林大贵</p><p>页数:519</p><p>定价:¥99.0</p><p>出版社:清华大学出版社</p><p>出版日期:2018-01-01</p><p>ISBN:9787302490739</p><p><h2>本书特色</h2></p>[<p>
+本书从浅显易懂的“大数据和机器学习”原理说明入手，讲述大数据和机器学习的基本概念，如分类、分析、训练、建模、预测、机器学习（推荐引擎）、机器学习（二元分类）、机器学习（多元分类）、机器学习（回归分析）和数据可视化应用等。书中不仅加入了新近的大数据技术，还丰富了“机器学习”内容。
+为降低读者学习大数据技术的门槛，书中提供了丰富的上机实践操作和范例程序详解，展示了如何在单机Windows系统上通过Virtual Box虚拟机安装多机Linux虚拟机，如何建立Hadoop集群，再建立Spark开发环境。书中介绍搭建的上机实践平台并不限制于单台实体计算机。对于有条件的公司和学校，参照书中介绍的搭建过程，同样可以实现将自己的平台搭建在多台实体计算机上，以便更加接近于大数据和机器学习真实的运行环境。
+本书非常适合于学习大数据基础知识的初学者阅读，更适合正在学习大数据理论和技术的人员作为上机实践用的教材。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>1.Hadoop集群安装与分散式运算和存储介绍通过实机操作，学会如何安装Virtual Box、Ubuntu Linux、Hadoop单机与多台机器集群安装，并学会使用HDFS分散式存储与MapReduce分散式运算。2.Python Spark 2.0安装通过实机操作，学会安装Spark 2.0，并在本机与多台机器集群执行Python Spark应用程序。同时介绍如何在iPython Notebook互动界面执行Python Spark指令。安装eclipse整合开发界面，开发Python Spark应用程序，大幅提升程序开发生产力。3.Python Spark SQL、DataFrame数据统计与数据可视化Spark SQL 即使非程序设计人员，只需要懂得SQL语法，就可以使用。DataFrame API 可使用类SQL的方法，如select()、groupby()、count()，很容易进行统计，大幅降低大数据分析的学习门槛。Spark DataFrame可转换为Pandas DataFrame，运用Python丰富的数据可视化组件（例如matplotlib）进行数据可视化。4.Python Spark MLlib机器学习以大数据分析实际案例MoiveLens、StumbleUpon、CovType、BikeSharing介绍如何使用Python Spark运用机器学习演算法进行数据处理、训练、建立模型、训练验证找出*模型、预测结果。5.Python Spark ML Pipeline机器学习流程以大数据实际案例示范使用Python Spark ML Pipeline机器学习流程进行二元分类、多元分类、回归分析，将机器学习的每一个步骤建立成Pipeline流程：数据处理 →运算法训练数据→建立模型→找出*模型→预测结果。Spark ML Pipeline 通过内建数据处理模块与机器学习运算法，减轻数据分析师在程序设计上的负担。 </p>]<p><h2>作者简介</h2></p>[<p>林大贵,从事IT行业多年，在系统设计、网站开发、数字营销、商业智慧、大数据、机器学习等领域具有丰富的实战经验。</p>]<p><h2>目录</h2></p>
+    目   录
+ 
+ 
+第1章  Python Spark机器学习与Hadoop大数据     1
+1.1  机器学习的介绍   2
+1.2 
+Spark的介绍 5
+1.3 
+Spark数据处理 RDD、DataFrame、Spark SQL  7
+1.4  使用Python开发 Spark机器学习与大数据应用       8
+1.5 
+Python Spark 机器学习         9
+1.6 
+Spark ML Pipeline机器学习流程介绍  10
+1.7 
+Spark 2.0的介绍    12
+1.8  大数据定义   13
+1.9 
+Hadoop 简介          14
+1.10 
+Hadoop HDFS分布式文件系统  14
+1.11 
+Hadoop MapReduce的介绍        17
+1.12 
+结论      18
+第2章  VirtualBox虚拟机软件的安装        19
+2.1 
+VirtualBox的下载和安装      20
+2.2  设置VirtualBox存储文件夹          23
+2.3  在VirtualBox创建虚拟机     25
+2.4  结论        29
+第3章  Ubuntu Linux 操作系统的安装      30
+3.1 
+Ubuntu Linux 操作系统的安装    31
+3.2  在Virtual设置Ubuntu虚拟光盘文件 33
+3.3  开始安装Ubuntu  35
+3.4  启动Ubuntu  40
+3.5  安装增强功能        41
+3.6  设置默认输入法   45
+3.7  设置“终端”程序        48
+3.8  设置“终端”程序为白底黑字   49
+3.9  设置共享剪贴板   50
+3.10 
+设置*佳下载服务器 52
+3.11 
+结论      56
+第4章  Hadoop Single Node Cluster的安装        57
+4.1  安装JDK         58
+4.2  设置SSH无密码登录    61
+4.3  下载安装Hadoop  64
+4.4  设置Hadoop环境变量 67
+4.5  修改Hadoop配置设置文件 69
+4.6  创建并格式化HDFS目录     73
+4.7  启动Hadoop  74
+4.8  打开Hadoop
+Resource-Manager Web界面 76
+4.9 
+NameNode HDFS Web界面   78
+4.10 
+结论      79
+第5章  Hadoop Multi Node Cluster的安装         80
+5.1  把Single Node
+Cluster复制到data1    83
+5.2  设置VirtualBox网卡     84
+5.3  设置data1服务器         87
+5.4  复制data1服务器到data2、data3、master     94
+5.5  设置data2服务器         97
+5.6  设置data3服务器         100
+5.7  设置master服务器      102
+5.8 
+master连接到data1、data2、data3 创建HDFS目录      107
+5.9  创建并格式化NameNode
+HDFS目录  110
+5.10 
+启动Hadoop Multi Node Cluster         112
+5.11 
+打开Hadoop ResourceManager Web界面         114
+5.12 
+打开NameNode Web界面 115
+5.13 
+停止Hadoop Multi Node Cluster         116
+5.14 
+结论      116
+第 6 章  Hadoop HDFS命令        117
+6.1  启动Hadoop
+Multi-Node Cluster  118
+6.2  创建与查看HDFS目录 120
+6.3  从本地计算机复制文件到HDFS  122
+6.4  将HDFS上的文件复制到本地计算机 127
+6.5  复制与删除HDFS文件 129
+6.6  在Hadoop HDFS
+Web用户界面浏览HDFS  131
+6.7  结论        134
+第7章  Hadoop MapReduce         135
+7.1  简单介绍WordCount.java     136
+7.2  编辑WordCount.java     137
+7.3  编译WordCount.java     141
+7.4  创建测试文本文件        143
+7.5  运行WordCount.java     145
+7.6  查看运行结果        146
+7.7  结论        147
+第8章  Python Spark的介绍与安装   148
+8.1 
+Scala的介绍与安装       150
+8.2  安装Spark      153
+8.3  启动pyspark交互式界面     156
+8.4  设置pyspark显示信息 157
+8.5  创建测试用的文本文件        159
+8.6  本地运行pyspark程序 161
+8.7  在Hadoop YARN运行pyspark      163
+8.8  构建Spark
+Standalone Cluster运行环境      165
+8.9  在Spark
+Standalone运行pyspark         171
+8.10 
+Spark Web UI界面        173
+8.11 
+结论      175
+第9章  在 IPython
+Notebook 运行 Python Spark 程序   176
+9.1  安装Anaconda       177
+9.2  在IPython
+Notebook使用Spark   180
+9.3  打开IPython
+Notebook笔记本     184
+9.4  插入程序单元格   185
+9.5  加入注释与设置程序代码说明标题   186
+9.6  关闭IPython
+Notebook 188
+9.7  使用IPython
+Notebook在Hadoop YARN-client模式运行   189
+9.8  使用IPython
+Notebook在Spark Stand Alone模式运行       192
+9.9  整理在不同的模式运行IPython
+Notebook的命令     194
+9.9.1 
+在 Local 启动 IPython Notebook     195
+9.9.2 
+在Hadoop YARN-client 模式启动 IPython Notebook       195
+9.9.3 
+在Spark Stand Alone 模式启动 IPython Notebook 195
+9.10 
+结论      196
+第10章  Python Spark RDD 197
+10.1 
+RDD的特性 198
+10.2 
+开启IPython Notebook        199
+10.3 
+基本RDD“转换”运算     201
+10.4 
+多个RDD“转换”运算     206
+10.5 
+基本“动作”运算      208
+10.6 
+RDD Key-Value 基本“转换”运算   209
+10.7 
+多个RDD Key-Value“转换”运算     212
+10.8 
+Key-Value“动作”运算      215
+10.9 
+Broadcast 广播变量   217
+10.10 
+accumulator累加器  220
+10.11 
+RDD Persistence持久化   221
+10.12 
+使用Spark创建WordCount      223
+10.13 
+Spark WordCount详细解说       226
+10.14 
+结论   228
+第11章  Python Spark的集成开发环境     229
+11.1 
+下载与安装eclipse Scala IDE      232
+11.2 
+安装PyDev  235
+11.3 
+设置字符串替代变量 240
+11.4 
+PyDev 设置 Python 链接库       243
+11.5 
+PyDev设置anaconda2链接库路径   245
+11.6 
+PyDev设置Spark Python链接库         247
+11.7 
+PyDev设置环境变量  248
+11.8 
+新建PyDev项目 251
+11.9 
+加入WordCount.py程序     253
+11.10 
+输入WordCount.py程序  254
+11.11 
+创建测试文件并上传至HDFS目录 257
+11.12 
+使用spark-submit执行WordCount程序         259
+11.13 
+在Hadoop YARN-client上运行WordCount程序      261
+11.14 
+在Spark Standalone Cluster上运行WordCount程序      264
+11.15 
+在eclipse外部工具运行Python Spark程序    267
+11.16 
+在eclipse运行spark-submit YARN-client          273
+11.17 
+在eclipse运行spark-submit Standalone 277
+11.18 
+结论   280
+第12章  Python Spark创建推荐引擎 281
+12.1 
+推荐算法介绍      282
+12.2 
+“推荐引擎”大数据分析使用场景 282
+12.3 
+ALS推荐算法的介绍   283
+12.4 
+如何搜索数据      285
+12.5 
+启动IPython Notebook        289
+12.6 
+如何准备数据      290
+12.7 
+如何训练模型      294
+12.8 
+如何使用模型进行推荐      295
+12.9 
+显示推荐的电影名称 297
+12.10 
+创建Recommend项目      299
+12.11 
+运行RecommendTrain.py 推荐程序代码        302
+12.12 
+创建Recommend.py推荐程序代码         304
+12.13 
+在eclipse运行Recommend.py         307
+12.14 
+结论   310
+第13章  Python Spark MLlib决策树二元分类   311
+13.1 
+决策树介绍 312
+13.2 
+“StumbleUpon Evergreen”大数据问题  313
+13.2.1 
+Kaggle网站介绍       313
+13.2.2 
+“StumbleUpon Evergreen”大数据问题场景分析        313
+13.3 
+决策树二元分类机器学习 314
+13.4 
+如何搜集数据      315
+13.4.1 
+StumbleUpon数据内容    315
+13.4.2 
+下载 StumbleUpon 数据         316
+13.4.3 
+用LibreOffice Calc 电子表格查看train.tsv    319
+13.4.4 
+复制到项目目录       322
+13.5  使用IPython Notebook示范       323
+13.6 
+如何进行数据准备      324
+13.6.1 
+导入并转换数据       324
+13.6.2 
+提取 feature 特征字段  327
+13.6.3 
+提取分类特征字段  328
+13.6.4 
+提取数值特征字段  331
+13.6.5 
+返回特征字段  331
+13.6.6 
+提取 label 标签字段       331
+13.6.7 
+建立训练评估所需的数据       332
+13.6.8 
+以随机方式将数据分为 3 部分并返回         333
+13.6.9 
+编写 PrepareData(sc) 函数    333
+13.7 
+如何训练模型      334
+13.8 
+如何使用模型进行预测      335
+13.9 
+如何评估模型的准确率      338
+13.9.1 
+使用 AUC 评估二元分类模型        338
+13.9.2 
+计算 AUC 339
+13.10 
+模型的训练参数如何影响准确率   341
+13.10.1 
+建立 trainEvaluateModel       341
+13.10.2 
+评估impurity参数 343
+13.10.3 
+训练评估的结果以图表显示         344
+13.10.4 
+编写 evalParameter       347
+13.10.5 
+使用 evalParameter 评估 maxDepth 参数        347
+13.10.6 
+使用 evalParameter 评估 maxBins 参数  348
+13.11 
+如何找出准确率*高的参数组合   349
+13.12 
+如何确认是否过度训练   352
+13.13 
+编写RunDecisionTreeBinary.py程序        352
+13.14 
+开始输入RunDecisionTreeBinary.py程序        353
+13.15 
+运行RunDecisionTreeBinary.py         355
+13.15.1 
+执行参数评估         355
+13.15.2 
+所有参数训练评估找出*好的参数组合    355
+13.15.3 
+运行 RunDecisionTreeBinary.py 不要输入参数  357
+13.16 
+查看DecisionTree的分类规则          358
+13.17 
+结论   360
+第14章  Python Spark MLlib 逻辑回归二元分类       361
+14.1 
+逻辑回归分析介绍      362
+14.2 
+RunLogisticRegression WithSGDBinary.py程序说明 363
+14.3 
+运行RunLogisticRegression WithSGDBinary.py进行参数评估          367
+14.4 
+找出*佳参数组合      370
+14.5 
+修改程序使用参数进行预测      370
+14.6 
+结论      372
+第15章  Python Spark MLlib支持向量机SVM二元分类  373
+15.1 
+支持向量机SVM算法的基本概念    374
+15.2 
+运行SVMWithSGD.py进行参数评估          376
+15.3 
+运行SVMWithSGD.py 训练评估参数并找出*佳参数组合    378
+15.4 
+运行SVMWithSGD.py 使用*佳参数进行预测        379
+15.5 
+结论      381
+第16章  Python Spark MLlib朴素贝叶斯二元分类   382
+16.1 
+朴素贝叶斯分析原理的介绍      383
+16.2 
+RunNaiveBayesBinary.py程序说明     384
+16.3 
+运行NaiveBayes.py进行参数评估    386
+16.4 
+运行训练评估并找出*好的参数组合      387
+16.5 
+修改RunNaiveBayesBinary.py 直接使用*佳参数进行预测  388
+16.6 
+结论      390
+第17章  Python Spark MLlib决策树多元分类   391
+17.1 
+“森林覆盖植被”大数据问题分析场景 392
+17.2 
+UCI Covertype数据集介绍 393
+17.3 
+下载与查看数据 394
+17.4 
+修改PrepareData() 数据准备   396
+17.5 
+修改trainModel 训练模型程序         398
+17.6 
+使用训练完成的模型预测数据 399
+17.7 
+运行RunDecisionTreeMulti.py 进行参数评估  401
+17.8 
+运行RunDecisionTreeMulti.py 训练评估参数并找出*好的参数组合  403
+17.9 
+运行RunDecisionTreeMulti.py 不进行训练评估      404
+17.10 
+结论   406
+第18章  Python Spark MLlib决策树回归分析   407
+18.1 
+Bike Sharing大数据问题分析     408
+18.2 
+Bike Sharing数据集     409
+18.3 
+下载与查看数据 409
+18.4 
+修改 PrepareData() 数据准备  412
+18.5 
+修改DecisionTree.trainRegressor训练模型      415
+18.6 
+以 RMSE 评估模型准确率         416
+18.7 
+训练评估找出*好的参数组合 417
+18.8 
+使用训练完成的模型预测数据 417
+18.9 
+运行RunDecisionTreeMulti.py进行参数评估   419
+18.10 
+运行RunDecisionTreeMulti.py训练评估参数并找出*好的参数组合 421
+18.11 
+运行RunDecisionTreeMulti.py 不进行训练评估    422
+18.12 
+结论   424
+第19章  Python Spark SQL、DataFrame、RDD数据统计与可视化         425
+19.1 
+RDD、DataFrame、Spark SQL 比较  426
+19.2 
+创建RDD、DataFrame与Spark SQL 427
+19.2.1 
+在 local 模式运行 IPython Notebook    427
+19.2.2 
+创建RDD  427
+19.2.3 
+创建DataFrame        428
+19.2.4 
+设置 IPython Notebook 字体 430
+19.2.5 
+为DataFrame 创建别名 431
+19.2.6 
+开始使用 Spark SQL         431
+19.3 
+SELECT显示部分字段          434
+19.3.1 
+使用 RDD 选取显示部分字段       434
+19.3.2 
+使用 DataFrames 选取显示字段  434
+19.3.3 
+使用 Spark SQL 选取显示字段       435
+19.4 
+增加计算字段      436
+19.4.1 
+使用 RDD 增加计算字段       436
+19.4.2 
+使用 DataFrames 增加计算字段  436
+19.4.3 
+使用 Spark SQL 增加计算字段       437
+19.5 
+筛选数据      438
+19.5.1 
+使用 RDD 筛选数据       438
+19.5.2 
+使用 DataFrames 筛选数据  438
+19.5.3 
+使用 Spark SQL 筛选数据       439
+19.6 
+按单个字段给数据排序      439
+19.6.1 
+RDD 按单个字段给数据排序          439
+19.6.2 
+使用 Spark SQL排序        440
+19.6.3 
+使用 DataFrames按升序给数据排序   441
+19.6.4 
+使用 DataFrames按降序给数据排序   442
+19.7 
+按多个字段给数据排序      442
+19.7.1 
+RDD 按多个字段给数据排序          442
+19.7.2 
+Spark SQL 按多个字段给数据排序         443
+19.7.3 
+DataFrames 按多个字段给数据排序    443
+19.8 
+显示不重复的数据      444
+19.8.1 
+RDD 显示不重复的数据          444
+19.8.2 
+Spark SQL 显示不重复的数据         445
+19.8.3 
+Dataframes显示不重复的数据      445
+19.9 
+分组统计数据      446
+19.9.1 
+RDD 分组统计数据          446
+19.9.2 
+Spark SQL分组统计数据 447
+19.9.3 
+Dataframes分组统计数据      448
+19.10 
+Join 联接数据   450
+19.10.1 
+创建 ZipCode 450
+19.10.2 
+创建 zipcode_tab  452
+19.10.3 
+Spark SQL 联接 zipcode_table 数据表         454
+19.10.4 
+DataFrame user_df 联接 zipcode_df   455
+19.11 
+使用 Pandas DataFrames 绘图       457
+19.11.1 
+按照不同的州统计并以直方图显示    457
+19.11.2 
+按照不同的职业统计人数并以圆饼图显示         459
+19.12 
+结论   461
+第20章  Spark ML Pipeline 机器学习流程二元分类         462
+20.1 
+数据准备      464
+20.1.1 
+在 local 模式执行 IPython Notebook    464
+20.1.2 
+编写 DataFrames UDF 用户自定义函数       466
+20.1.3 
+将数据分成 train_df 与 test_df    468
+20.2 
+机器学习pipeline流程的组件   468
+20.2.1 
+StringIndexer     468
+20.2.2 
+OneHotEncoder         470
+20.2.3 
+VectorAssembler       472
+20.2.4 
+使用 DecisionTreeClassi?er 二元分类  474
+20.3 
+建立机器学习pipeline流程        475
+20.4 
+使用pipeline进行数据处理与训练   476
+20.5 
+使用pipelineModel 进行预测    477
+20.6 
+评估模型的准确率      478
+20.7 
+使用TrainValidation进行训练验证找出*佳模型    479
+20.8 
+使用crossValidation交叉验证找出*佳模型   481
+20.9 
+使用随机森林 RandomForestClassi?er分类器         483
+20.10 
+结论   485
+第21章  Spark ML Pipeline 机器学习流程多元分类         486
+21.1 
+数据准备      487
+21.1.1 
+读取文本文件  488
+21.1.2  创建 DataFrame      489
+21.1.3 
+转换为 double 490
+21.2 
+建立机器学习pipeline流程        492
+21.3 
+使用dt_pipeline进行数据处理与训练      493
+21.4 
+使用pipelineModel 进行预测    493
+21.5 
+评估模型的准确率      495
+21.4 
+使用TrainValidation进行训练验证找出*佳模型    496
+21.7 
+结论      498
+第22章  Spark ML Pipeline 机器学习流程回归分析         499
+22.1 
+数据准备      501
+22.1.1 
+在local 模式执行 IPython Notebook     501
+22.1.2 
+将数据分成 train_df 与 test_df    504
+22.2 
+建立机器学习pipeline流程        504
+22.3 
+使用dt_pipeline进行数据处理与训练      506
+22.4 
+使用pipelineModel 进行预测    506
+22.5 
+评估模型的准确率      507
+22.6 
+使用TrainValidation进行训练验证找出*佳模型    508
+22.7 
+使用crossValidation进行交叉验证找出*佳模型   510
+22.8 
+使用GBT Regression   511
+22.9 
+结论      513
+附录A  本书范例程序下载与安装说明      514
+A.1  下载范例程序        515
+A.2  打开本书IPython
+Notebook范例程序         516
+A.3  打开 eclipse
+PythonProject 范例程序         518

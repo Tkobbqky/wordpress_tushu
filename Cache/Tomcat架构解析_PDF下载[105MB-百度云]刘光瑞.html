@@ -1,0 +1,211 @@
+Tomcat架构解析 PDF下载 刘光瑞 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711545369
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711545369
+<p>书名:Tomcat架构解析</p><p>作者:刘光瑞</p><p>页数:369</p><p>定价:¥79.0</p><p>出版社:人民邮电出版社</p><p>出版日期:2017-05-01</p><p>ISBN:9787115453693</p><p><h2>本书特色</h2></p>[<p>
+Tomcat架构解析 基于Tomcat 8.5.x全面介绍了Tomcat的架构、各组件的实现方案以及使用方式，主要包括Tomcat的基础组件架构以及工作原理，Tomcat各组件的实现方案、使用方式以及详细配置说明，Tomcat与Web服务器集成以及性能优化，Tomcat部分扩展特性介绍等。读者可以了解应用服务器的架构以及工作原理，学习Tomcat的使用、优化以及详细配置。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>基于Tomcat新版本全面解析应用服务器架构 
+涵盖Tomcat所有组件的详细配置、使用与优化 
+知识讲解广度与深度结合，系统性与完整性兼备
+Tomcat作为一款开源的轻量级Web应用服务器，技术先进，性能稳定，深受Java爱好者的喜爱，也得到了广大软件开发商的高度认可，目前已成为zui流行的Java Web应用服务器，广泛应用于企业应用系统及云服务平台，是开发和调试JSP Servlet应用的shouxuan。系统学习Tomcat架构将会令你受益匪浅。
+Tomcat架构解析 从功能组件、协议、规范，到详细配置等各个方面，系统性介绍了Tomcat架构的实现方案及使用方式，有助于读者详细了解应用服务器的架构及工作原理。主要内容包括：
+★ Tomcat的基础组件架构及工作原理；
+★ Tomcat各组件的设计、实现方案、使用方式及详细配置；
+★ Tomcat与Web服务器集成及性能优化；
+★ Tomcat部分扩展特性介绍：嵌入式、Comet、WebSocket等。
+学习Tomcat架构解析，读者可以详细了解应用服务器的架构以及工作原理，不仅可以系统掌握Tomcat的使用，而且对于应用系统基础架构也有很大的借鉴意义。 </p>]<p><h2>作者简介</h2></p>[<p>刘光瑞，北京窝客研发总监，负责窝客产品研发管理及总体架构设计。拥有十几年的企业级大型业务系统研发架构经验，成功带领团队设计并研发基于Tomcat的组件化微服务架构。2007年在四达软件担任高级架构师，主导了数个省份的广播电视省网业务运营支撑系统的架构设计及优化工作。2012年在电讯盈科担任高级技术顾问，参与了中国移动供应链系统的架构及研发。在应用系统架构及性能优化方面积累了丰富的经验。</p>]<p><h2>目录</h2></p>
+    第1章　Tomcat介绍　　1
+1.1　简介　1
+1.1.1　Tomcat历史　1
+1.1.2　Tomcat许可　2
+1.2　安装和启动　3
+1.2.1　Tomcat下载与安装　3
+1.2.2　Tomcat启动　4
+1.2.3　IDE启动　5
+1.2.4　嵌入式启动　10
+1.2.5　Debug启动　11
+1.3　Tomcat目录结构　12
+1.4　Tomcat 8.5之后的新特性　12
+1.5　小结　13
+第2章　Tomcat总体架构　14
+2.1　总体设计　14
+2.1.1　Server　14
+2.1.2　Connector和Container　15
+2.1.3　Container设计　17
+2.1.4　Lifecycle　20
+2.1.5　Pipeline和Valve　23
+2.1.6　Connector设计　24
+2.1.7　Executor　26
+2.1.8　Bootstrap和Catalina　28
+2.2　Tomcat启动　30
+2.3　请求处理　31
+2.4　类加载器　33
+2.4.1　J2SE标准类加载器　33
+2.4.2　Tomcat加载器　34
+2.4.3　Web应用类加载器　36
+2.5　小结　37
+第3章　Catalina　38
+3.1　什么是Catalina　38
+3.2　Digester　39
+3.2.1　对象栈　40
+3.2.2　匹配模式　41
+3.2.3　处理规则　41
+3.2.4　示例程序　42
+3.3　创建Server　44
+3.3.1　Server的解析　45
+3.3.2　Engine的解析　48
+3.3.3　Host的解析　49
+3.3.4　Context的解析　50
+3.4　Web应用加载　53
+3.4.1　StandardHost　54
+3.4.2　HostConfig　56
+3.4.3　StandardContext　60
+3.4.4　ContextConfig　64
+3.4.5　StandardWrapper　69
+3.4.6　Context命名规则　69
+3.5　Web请求处理　71
+3.5.1　总体过程　71
+3.5.2　请求映射　72
+3.5.3　Catalina请求处理　80
+3.6　DefaultServlet和JspServlet　81
+3.6.1　DefaultServlet　82
+3.6.2　JspServlet　84
+3.7　小结　85
+第4章　Coyote　86
+4.1　什么是Coyote　86
+4.2　Web请求处理　88
+4.2.1　主要概念　88
+4.2.2　请求处理　90
+4.2.3　协议升级　92
+4.3　HTTP　94
+4.3.1　基础知识　94
+4.3.2　配置方式　95
+4.4　AJP　97
+4.4.1　基础知识　97
+4.4.2　Web服务器组件　103
+4.4.3　配置方式　106
+4.5　HTTP 2.0　106
+4.5.1　基础知识　106
+4.5.2　配置方式　110
+4.6　I O　111
+4.6.1　BIO　112
+4.6.2　NIO　115
+4.6.3　NIO2　121
+4.6.4　APR　130
+4.7　小结　134
+第5章　Jasper　136
+5.1　Jasper简介　136
+5.2　JSP编译方式　137
+5.2.1　运行时编译　137
+5.2.2　预编译　141
+5.3　JSP编译原理　144
+5.4　小结　151
+第6章　Tomcat配置管理　152
+6.1　JVM配置　152
+6.1.1　JVM配置选项　152
+6.1.2　系统属性　153
+6.2　服务器配置　158
+6.2.1　catalina.properties　158
+6.2.2　server.xml　159
+6.2.3　context.xml　172
+6.3　Web应用配置　172
+6.3.1　ServletContext初始化参数　173
+6.3.2　会话配置　174
+6.3.3　Servlet声明及映射　175
+6.3.4　应用生命周期监听器　177
+6.3.5　Filter定义及映射　177
+6.3.6　MIME类型映射　178
+6.3.7　欢迎文件列表　178
+6.3.8　错误页面　179
+6.3.9　本地化及编码映射　179
+6.3.10　安全配置　179
+6.3.11　JNDI配置　180
+6.3.12　其他　183
+6.4　Web应用过滤器　185
+6.4.1　CorsFilter　186
+6.4.2　CsrfPreventionFilter　188
+6.4.3　ExpiresFilter　188
+6.4.4　FailedRequestFilter　190
+6.4.5　RemoteAddrFilter　191
+6.4.6　RemoteHostFilter　191
+6.4.7　RemoteIpFilter　192
+6.4.8　RequestDumperFilter　195
+6.4.9　SetCharacterEncodingFilter　195
+6.4.10　WebdavFixFilter　196
+6.5　Tomcat管理　196
+6.5.1　host-manager　196
+6.5.2　manager　197
+6.5.3　管理命令行　199
+6.5.4　Ant任务　200
+6.5.5　JMX　201
+6.6　小结　201
+第7章　Web服务器集成　202
+7.1　Web服务器与应用服务器的区别　202
+7.2　集成应用场景　205
+7.3　与Apache HTTP Server集成　206
+7.3.1　Windows环境安装　206
+7.3.2　Linux环境安装　207
+7.3.3　mod_jk　209
+7.3.4　mod_proxy_ajp　229
+7.4　与Ngnix集成　235
+7.4.1　Ngnix简介　235
+7.4.2　Windows环境安装　237
+7.4.3　Linux环境安装　237
+7.4.4　Tomcat集成　241
+7.5　与IIS集成　243
+7.6　小结　243
+第8章　Tomcat集群　244
+8.1　Tomcat集群介绍　244
+8.1.1　Tomcat集群基础　246
+8.1.2　Apache Tribes　247
+8.1.3　Tomcat集群组件实现　253
+8.2　集群配置　254
+8.3　会话同步　255
+8.3.1　DeltaManager　256
+8.3.2　BackupManager　257
+8.3.3　替代方案　257
+8.4　集群部署　258
+8.4.1　实现原理　258
+8.4.2　配置方式　259
+8.5　小结　259
+第9章　Tomcat安全　260
+9.1　配置安全　260
+9.1.1　安装部署问题　260
+9.1.2　server.xml配置　261
+9.2　应用安全　263
+9.2.1　Realm　264
+9.2.2　HttpServletRequest　265
+9.2.3　Authenticator　266
+9.3　传输安全（SSL）　267
+9.4　Java安全策略　273
+9.4.1　简介　273
+9.4.2　catalina.policy　275
+9.5　小结　279
+第10章　Tomcat性能调优　280
+10.1　Tomcat性能测试及诊断　281
+10.1.1　常见测试方式　281
+10.1.2　性能测试工具　282
+10.1.3　数据采集及分析　290
+10.2　Tomcat性能优化　303
+10.2.1　JVM优化　304
+10.2.2　Tomcat配置　308
+10.3　应用性能优化建议　311
+10.4　小结　312
+第11章　Tomcat附加功能　313
+11.1　Tomcat的嵌入式启动　313
+11.1.1　为什么需要嵌入式启动　313
+11.1.2　嵌入式启动Tomcat　314
+11.1.3　嵌入式启动服务器　316
+11.2　Tomcat中的JNDI　317
+11.2.1　什么是JNDI　317
+11.2.2　Tomcat中的JNDI　318
+11.3　Comet和WebSocket　320
+11.3.1　什么是Comet　321
+11.3.2　Tomcat的Comet实现　322
+11.3.3　什么是WebSocket　326
+11.3.4　Tomcat的WebSocket实现　328
+11.4　小结　335
+附录　server.xml配置　336
+结束语　370
+
+
+

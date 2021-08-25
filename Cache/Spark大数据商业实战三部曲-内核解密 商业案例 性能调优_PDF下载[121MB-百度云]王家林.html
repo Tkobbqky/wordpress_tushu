@@ -1,0 +1,233 @@
+Spark大数据商业实战三部曲-内核解密/商业案例/性能调优 PDF下载 王家林 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730248962
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730248962
+<p>书名:Spark大数据商业实战三部曲-内核解密/商业案例/性能调优</p><p>作者:王家林</p><p>页数:1143</p><p>定价:¥299.0</p><p>出版社:清华大学出版社</p><p>出版日期:2018-02-01</p><p>ISBN:9787302489627</p><p><h2>本书特色</h2></p>[<p>
+《Spark大数据商业实战三部曲：内核解密|商业案例|性能调优》基于Spark 2.2.X，以Spark商业案例实战和Spark在生产环境下几乎所有类型的性能调优为核心，以Spark内核解密为基石，分为上篇、中篇、下篇，对企业生产环境下的Spark商业案例与性能调优抽丝剥茧地进行剖析。上篇基于Spark源码，从一个动手实战案例入手，循序渐进地全面解析了Spark 2.2新特性及Spark内核源码；中篇选取Spark开发中*有代表的经典学习案例，深入浅出地介绍，在案例中综合应用Spark的大数据技术；下篇性能调优内容基本完全覆盖了Spark在生产环境下的所有调优技术。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>基于*的Spark2.2.X版本，分为内核解密篇，商业案例篇，性能调优篇，共31章，学习过程中有任何疑问，可加入QQ群，有专业人员答疑解惑。 </p>]<p><h2>目录</h2></p>
+    目    录
+上篇  内核解密
+第1章  电光石火间体验Spark 2.2开发实战... 2
+1.1  通过RDD实战电影点评系统入门及源码阅读... 2
+1.1.1  Spark核心概念图解... 2
+1.1.2  通过RDD实战电影点评系统案例... 4
+1.2  通过DataFrame和DataSet实战电影点评系统... 7
+1.2.1  通过DataFrame实战电影点评系统案例... 7
+1.2.2  通过DataSet实战电影点评系统案例... 10
+1.3  Spark 2.2源码阅读环境搭建及源码阅读体验... 11
+第2章  Spark
+2.2技术及原理... 14
+2.1  Spark 2.2综述... 14
+2.1.1  连续应用程序... 14
+2.1.2  新的API 15
+2.2  Spark 2.2 Core. 16
+2.2.1  第二代Tungsten引擎... 16
+2.2.2  SparkSession. 16
+2.2.3  累加器API 17
+2.3  Spark 2.2 SQL. 19
+2.3.1  Spark SQL. 20
+2.3.2  DataFrame和Dataset
+API 20
+2.3.3  Timed Window.. 21
+2.4  Spark 2.2 Streaming. 21
+2.4.1  Structured
+Streaming. 21
+2.4.2  增量输出模式... 23
+2.5  Spark 2.2 MLlib. 27
+2.5.1  基于DataFrame的Machine
+Learning API 28
+2.5.2  R的分布式算法... 28
+2.6  Spark 2.2 GraphX.. 29
+第3章  Spark的灵魂：RDD和DataSet 30
+3.1  为什么说RDD和DataSet是Spark的灵魂... 30
+3.1.1  RDD的定义及五大特性剖析... 30
+3.1.2  DataSet的定义及内部机制剖析... 34
+3.2  RDD弹性特性七个方面解析... 36
+3.3  RDD依赖关系... 43
+3.3.1  窄依赖解析... 43
+3.3.2  宽依赖解析... 45
+3.4  解析Spark中的DAG逻辑视图... 46
+3.4.1  DAG生成的机制... 46
+3.4.2  DAG逻辑视图解析... 47
+3.5  RDD内部的计算机制... 49
+3.5.1  Task解析... 49
+3.5.2  计算过程深度解析... 49
+3.6  Spark RDD容错原理及其四大核心要点解析... 57
+3.6.1  Spark RDD容错原理... 57
+3.6.2  RDD容错的四大核心要点... 57
+3.7  Spark RDD中Runtime流程解析... 59
+3.7.1  Runtime架构图... 59
+3.7.2  生命周期... 60
+3.8  通过WordCount实战解析Spark RDD内部机制... 70
+3.8.1  Spark WordCount动手实践... 70
+3.8.2  解析RDD生成的内部机制... 72
+3.9  基于DataSet的代码到底是如何一步步转化成为RDD的... 78
+第4章  Spark
+Driver启动内幕剖析... 81
+4.1  Spark Driver Program剖析... 81
+4.1.1  Spark Driver
+Program.. 81
+4.1.2  SparkContext深度剖析... 81
+4.1.3  SparkContext源码解析... 82
+4.2  DAGScheduler解析... 96
+4.2.1  DAG的定义... 96
+4.2.2  DAG的实例化... 97
+4.2.3  DAGScheduler划分Stage的原理... 98
+4.2.4  DAGScheduler划分Stage的具体算法... 99
+4.2.5  Stage内部Task获取*佳位置的算法... 113
+4.3  TaskScheduler解析... 116
+4.3.1  TaskScheduler原理剖析... 116
+4.3.2  TaskScheduler源码解析... 117
+4.4  SchedulerBackend解析... 132
+4.4.1  SchedulerBackend原理剖析... 132
+4.4.2  SchedulerBackend源码解析... 132
+4.4.3  Spark程序的注册机制... 133
+4.4.4  Spark程序对计算资源Executor的管理... 134
+4.5  打通Spark系统运行内幕机制循环流程... 135
+4.6  本章总结... 145
+第5章  Spark集群启动原理和源码详解... 146
+5.1  Master启动原理和源码详解... 146
+5.1.1  Master启动的原理详解... 146
+5.1.2  Master启动的源码详解... 147
+5.1.3  Master HA双机切换... 157
+5.1.4  Master的注册机制和状态管理解密... 163
+5.2  Worker启动原理和源码详解... 170
+5.2.1  Worker启动的原理流程... 170
+5.2.2  Worker启动的源码详解... 174
+5.3  ExecutorBackend启动原理和源码详解... 178
+5.3.1  ExecutorBackend接口与Executor的关系... 178
+5.3.2  ExecutorBackend的不同实现... 179
+5.3.3  ExecutorBackend中的通信... 181
+5.3.4  ExecutorBackend的异常处理... 183
+5.4  Executor中任务的执行... 184
+5.4.1  Executor中任务的加载... 184
+5.4.2  Executor中的任务线程池... 185
+5.4.3  任务执行失败处理... 186
+5.4.4  揭秘TaskRunner 188
+5.5  Executor执行结果的处理方式... 189
+5.6  本章总结... 197
+第6章  Spark
+Application提交给集群的原理和源码详解... 198
+6.1  Spark Application到底是如何提交给集群的... 198
+6.1.1  Application提交参数配置详解... 198
+6.1.2  Application提交给集群原理详解... 199
+6.1.3  Application提交给集群源码详解... 201
+6.2  Spark Application是如何向集群申请资源的... 211
+6.2.1  Application申请资源的两种类型详解... 211
+6.2.2  Application申请资源的源码详解... 213
+6.3  从Application提交的角度重新审视Driver 219
+6.3.1  Driver到底是什么时候产生的... 220
+6.3.2  Driver和Master交互原理解析... 238
+6.3.3  Driver和Master交互源码详解... 244
+6.4  从Application提交的角度重新审视Executor 249
+6.4.1  Executor到底是什么时候启动的... 249
+6.4.2  Executor如何把结果交给Application. 254
+6.5  Spark 1.6 RPC内幕解密：运行机制、源码详解、Netty与Akka等... 254
+6.6  本章总结... 267
+第7章 
+Shuffle原理和源码详解... 268
+7.1  概述... 268
+7.2  Shuffle的框架... 269
+7.2.1  Shuffle的框架演进... 269
+7.2.2  Shuffle的框架内核... 270
+7.2.3  Shuffle框架的源码解析... 272
+7.2.4  Shuffle数据读写的源码解析... 275
+7.3  Hash Based Shuffle. 281
+7.3.1  概述... 281
+7.3.2  Hash Based Shuffle内核... 282
+7.3.3  Hash Based Shuffle数据读写的源码解析... 285
+7.4  Sorted Based Shuffle. 290
+7.4.1  概述... 292
+7.4.2  Sorted Based
+Shuffle内核... 293
+7.4.3  Sorted Based
+Shuffle数据读写的源码解析... 294
+7.5  Tungsten Sorted Based Shuffle. 302
+7.5.1  概述... 302
+7.5.2  Tungsten Sorted
+Based Shuffle内核... 302
+7.5.3  Tungsten Sorted
+Based Shuffle数据读写的源码解析... 303
+7.6  Shuffle与Storage 模块间的交互... 309
+7.6.1  Shuffle注册的交互... 310
+7.6.2  Shuffle写数据的交互... 314
+7.6.3  Shuffle读数据的交互... 315
+7.6.4  BlockManager架构原理、运行流程图和源码解密... 315
+7.6.5  BlockManager解密进阶：BlockManager初始化和注册解密、BlockManager- Master工作解密、BlockTransferService解密、本地数据读写解密、远程数据读写解密... 324
+7.7  本章总结... 341
+第8章  Job工作原理和源码详解... 342
+8.1  Job到底在什么时候产生... 342
+8.1.1  触发Job的原理和源码解析... 342
+8.1.2  触发Job的算子案例... 344
+8.2  Stage划分内幕... 345
+8.2.1  Stage划分原理详解... 345
+8.2.2  Stage划分源码详解... 346
+8.3  Task全生命周期详解... 346
+8.3.1  Task的生命过程详解... 347
+8.3.2  Task在Driver和Executor中交互的全生命周期原理和源码详解... 348
+8.4  ShuffleMapTask和ResultTask处理结果是如何被Driver管理的... 364
+8.4.1  ShuffleMapTask执行结果和Driver的交互原理及源码详解... 364
+8.4.2  ResultTask执行结果与Driver的交互原理及源码详解... 370
+第9章  Spark中Cache和checkpoint原理和源码详解... 372
+9.1  Spark中Cache原理和源码详解... 372
+9.1.1  Spark中Cache原理详解... 372
+9.1.2  Spark中Cache源码详解... 372
+9.2  Spark中checkpoint原理和源码详解... 381
+9.2.1  Spark中checkpoint原理详解... 381
+9.2.2  Spark中checkpoint源码详解... 381
+第10章  Spark中Broadcast和Accumulator原理和源码详解... 391
+10.1  Spark中Broadcast原理和源码详解... 391
+10.1.1  Spark中Broadcast原理详解... 391
+10.1.2  Spark中Broadcast源码详解... 393
+10.2 
+Spark中Accumulator原理和源码详解... 396
+10.2.1  Spark中Accumulator原理详解... 396
+10.2.2  Spark中Accumulator源码详解... 396
+第11章  Spark与大数据其他经典组件整合原理与实战... 399
+11.1 
+Spark组件综合应用... 399
+11.2  Spark与Alluxio整合原理与实战... 400
+11.2.1  Spark与Alluxio整合原理... 400
+11.2.2  Spark与Alluxio整合实战... 401
+11.3  Spark与Job Server整合原理与实战... 403
+11.3.1  Spark与Job
+Server整合原理... 403
+11.3.2  Spark与Job
+Server整合实战... 404
+11.4  Spark与Redis整合原理与实战... 406
+11.4.1  Spark与Redis整合原理... 406
+11.4.2  Spark与Redis整合实战... 407
+中篇  商业案例
+第12章  Spark商业案例之大数据电影点评系统应用案例... 412
+12.1  通过RDD实现分析电影的用户行为信息... 412
+12.1.1  搭建IDEA开发环境... 412
+12.1.2  大数据电影点评系统中电影数据说明... 425
+12.1.3  电影点评系统用户行为分析统计实战... 428
+12.2  通过RDD实现电影流行度分析... 431
+12.3  通过RDD分析各种类型的*喜爱电影TopN及性能优化技巧... 433
+12.4  通过RDD分析电影点评系统仿QQ和微信等用户群分析及广播
+背后机制解密... 436
+12.5  通过RDD分析电影点评系统实现Java和Scala版本的二次排序系统... 439
+12.5.1  二次排序自定义Key值类实现（Java）... 440
+12.5.2  电影点评系统二次排序功能实现（Java）... 442
+12.5.3  二次排序自定义Key值类实现（Scala）... 445
+12.5.4  电影点评系统二次排序功能实现（Scala）... 446
+12.6  通过Spark SQL中的SQL语句实现电影点评系统用户行为分析... 447
+12.7  通过Spark SQL下的两种不同方式实现口碑*佳电影分析... 451
+12.8  通过Spark SQL下的两种不同方式实现*流行电影分析... 456
+12.9  通过DataFrame分析*受男性和女性喜爱电影TopN.. 457
+12.10  纯粹通过DataFrame分析电影点评系统仿QQ和微信、淘宝等用户群... 460
+12.11  纯粹通过DataSet对电影点评系统进行流行度和不同年龄阶段兴趣分析等... 462
+12.11.1  通过DataSet实现某特定电影观看者中男性和女性不同年龄的人数... 463
+12.11.2  通过DataSet方式计算所有电影中平均得分*高
+（口碑*好）的电影TopN.. 464
+12.11.3  通过DataSet方式计算所有电影中粉丝或者观看人数*多（*流行电影）的电影TopN   465
+12.11.4  纯粹通过DataSet的方式实现所有电影中*受男性、女性喜爱的
+电影Top10. 466
+12.11.5  纯粹通过DataSet的方式实现所有电影中QQ或者微信核心目标
+用户*喜爱电影TopN分析... 467
+12.11.6  纯粹通过DataSet的方式实现所有电影中淘宝核心目标用户*喜爱电影TopN分析    469
+12.12  大数据电影点评系统应用案例涉及的核心知识点原理、源码及案例代码... 470
+12.12.1  知识点：广播变量Broadcast内幕机制... 470
+12.12.2  知识点：SQL全局临时视图及临时视图... 473
+12.12.3  大数据电影点评系统应用案例完整代码... 474
+12.13  本章总结... 496

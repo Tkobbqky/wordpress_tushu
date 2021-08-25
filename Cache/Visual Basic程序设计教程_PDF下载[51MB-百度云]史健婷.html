@@ -1,0 +1,773 @@
+Visual Basic程序设计教程 PDF下载 史健婷 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730246542
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730246542
+<p>书名:Visual Basic程序设计教程</p><p>作者:史健婷</p><p>页数:286</p><p>定价:¥39.5</p><p>出版社:清华大学出版社</p><p>出版日期:2017-07-01</p><p>ISBN:9787302465423</p><p><h2>本书特色</h2></p>[<p>
+Visual Basic是微软公司开发的一种通用的基于对象的程序设计语言，具有简单易学、功能强大等特点。本书以Visual Basic 6.0为程序开发工具，系统地介绍掌握Visual Basic 6.0技术**的基础知识和Visual Basic程序设计方法，可满足高校非计算机专业公共计算机基础课教学的需要。全书共分为12章，内容包括Visual Basic程序设计概述、Visual Basic程序设计基础、Visual Basic控制结构、常用标准控件、数组及应用、过程与函数、鼠标与键盘事件、应用程序的界面设计、Visual Basic图形操作、文件、数据库应用程序设计和程序的调试与错误处理。本书既注重理论知识，又注重程序设计方法的训练，深入浅出，突出实践性与实用性。本书可作为高等学校非计算机专业本、专科Visual Basic语言程序设计课程的教材，也可作为各类计算机水平考试、全国计算机等级考试的自学辅助用书，还可作为计算机程序设计培训机构的教材。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>本书是编者总结多年的一线教学经验精心编写而成的。每章都配备了大量实例，通过应用实例或例题进行程序设计实践，操作步骤清晰，有利于学生编程能力和自学能力的提高。同时，每一章的后面精选了多种类型的习题，有助于学生复习巩固所学的知识，培养实际编程能力。 </p>]<p><h2>目录</h2></p>
+    Visual Basic控制结构
+VB属于面向对象的编程语言，在总体上支持面向对象的程序设计思想，程序执行采用事件驱动机制，即在运行时过程的执行顺序是由事件的触发顺序决定的，但对于具体的对象事件过程编程以及自定义过程编程仍然采用结构化程序设计的思想，使用流程控制语句来控制程序的执行。结构化程序设计思想规定了程序设计应采用的3种基本结构，即顺序结构、分支结构和循环结构。这些结构决定了程序执行的顺序，每种结构都只有一个入口、一个出口。事实证明，无论多么复杂的问题，其算法都可以表示为这3种基本结构的组合。本章将介绍这3种基本结构的相关控制语句以及使用这些结构实现的常用算法。
+3.1  顺 序 结 构
+计算机在执行顺序结构的程序时按语句出现的先后次序从上到下一句一句地执行。其结构流程如图3.1所示，图中虚线框内是一个顺序结构，运行时先执行语句A，再执行语句B。
+在前面所举的绝大多数示例中，编写的事件过程都是顺序结构的。在VB中，构成顺序结构的语句主要有赋值语句、数据的输入/输出语句、注释语句、暂停语句和程序结束语句等。
+【例3.1】 编程实现两个变量中的值的交换。假设10存放在变量x中，20存放在变量y中，交换x和y中的值，使得20存放在变量x中，10存放在变量y中。
+分析：两个变量中的值的交换可借助于第3个变量，这里假设为temp，由此交换步骤如图3.2所示，具体描述如下。
+ 
+图3.2  两个变量的数据交换示意图
+（1）将变量x的值放到变量temp中暂存；
+（2）将变量y的值放到变量x中，x原来的值被y的值替换；
+（3）将变量temp的值放到变量y中，y原来的值被temp的值（x的原值）替换，完成交换。
+程序代码如下：
+ 
+Private Sub Command1_Click()Dim x As Integer, y As Integer, temp As Integerx = InputBox("input x:", , 10)y = InputBox("input y:", , 20)temp = xx = yy = tempPrint "交换后:" & x & "," & y
+End Sub
+ 
+程序运行时，单击Command1按钮执行Command1_Click事件过程，顺序执行过程中的各语句。
+3.2  选 择 结 构
+计算机处理问题时经常需要根据某些给定的条件是否满足来决定所执行的操作。选择结构就是对给定条件进行判断，从而选择执行不同的分支。例如要把学生考试成绩转换为等级，则需要根据成绩高低的判断结果来确定。如果成绩在90～100范围内，则评定为“优秀”；如果成绩在60～89范围内，则评定为“合格”；如果成绩在60分以下，则评定为“不合格”。对于这类问题，采用顺序结构是无法解决的，需要采用选择结构来实现。VB中的选择结构有If语句、Select Case语句、IIf函数3种形式。
+3.2.1  If语句  
+If语句有单分支、双分支和多分支3种结构。
+1．单分支结构（If…Then语句） 
+单分支结构有单行和多行两种形式，具体语法格式描述如下，结构流程如图3.3所示。
+单行形式：
+ 
+If 条件> Then 语句块A>
+ 
+多行形式：
+ 
+If 条件> Then 语句块A>
+End If 
+ 
+执行If…Then语句，如果成立（为True），则执行。
+说明：
+（1）一般为关系表达式、逻辑表达式，当然也可以是其他表达式。当为算术表达式时，需转换数值为逻辑量，转换规则为非0转换为True，0转换为False。当为字符表达式时，只有“true”（字母大小写不限）才能转换为True；只有“false”（字母大小写不限）才能转换为False。
+（2）可以是一条语句，也可以是多条语句。在单行形式中，是必需的，为一条语句或多条以冒号分隔的语句。
+例如，通过比较交换x、y中的数，使得x大于y。
+单行形式：If x 
+多行形式：If x 
+            t = x
+            x = y
+            y = t
+          End If
+其程序流程如图3.4所示。
+2．双分支结构（If…Then…Else语句） 
+双分支结构的If语句也可以写成单行和多行两种形式，结构流程如图3.5所示，具体语法格式如下。
+ 
+图3.4  程序流程                          图3.5  双分支结构流程
+单行形式：
+ 
+If 条件> Then 语句块A> Else 语句块B>
+ 
+多行形式：
+ 
+If  条件>  Then 语句块A>
+Else 语句块B>
+End If   
+ 
+当为True时执行Then后面的，否则执行Else后面的。在单行形式中，或为一条语句或多条以冒号分隔的语句。
+【例3.2】 用双分支条件语句计算以下分段函数的值。
+ 
+如图3.6所示，在文本框Text1中输入x的值；单击“计算”按钮，计算y的值，并在Text2中输出计算结果。
+代码设计：将计算过程的代码放在“计算”按钮的Click事件过程，首先读取文本框Text1中的值（在单击“计算”按钮之前输入）赋给变量x；然后进行判断，如果xy=|x|，否则；*后结果在Text2中输出。该过程可以用如图3.7所示的流程图来表示。
+ 
+     图3.6  计算分段函数——程序界面          图3.7  分段函数处理流程图
+用单行双分支If语句编程：
+ 
+Private Sub Command1_Click()Dim x As Single, y As Singlex = Val(Text1.Text)If x Text2.Text = y
+End Sub
+ 
+用多行双分支If语句编程：
+ 
+Private Sub Command2_Click()Dim x As Single, y As Singlex = Val(Text1.Text)If x y = Abs(x)Elsey = x ^ 2   1End IfText2.Text = y
+End Sub
+3．多分支结构（If…Then…[ElseIf…][Else…]End If语句） 
+多分支结构的If语句一般写成多行形式，这样条理清楚，便于阅读和理解，具体语法格式描述如下。
+ 
+If  条件1>  Then 语句块1> 
+[ElseIf  条件2>  Then  语句块2>]
+…
+[Else　 语句块n 1] 
+End If   
+ 
+语句功能：先测试，如果为False，就测试，依此类推，直到找到值为True的条件为止。如果找到值为True的条件，就执行该条件对应的语句块，然后执行End If 语句。如果所有条件都为False，就执行Else后面的n 1>，然后执行End If 语句。其结构流程如图3.8所示。
+ 
+图3.8  块结构If语句流程图
+说明： 
+（1）不管有几个分支，程序执行了一个分支后其余分支不再执行。
+（2）ElseIf不能写成Else If。 
+（3）根据流程，当多分支中有多个条件都为True时只执行**个为True的分支语句块。
+（4）ElseIf子句和Else子句是可选项，若省略前者则退化为双分支结构，若两者都省略则退化为单分支结构。
+【例3.3】 编程计算下列分段函数值，要求在Text1中输入x的值，单击“计算”按钮计算函数值并在Text2中输出。程序界面如图3.9所示。
+ 代码设计一： 代码设计二：Private Sub Command1_Click()
+    Dim x As Single, y As Single
+    x = Text1.Text
+    If x 
+        y = 2 - x
+    ElseIf 0
+        y = x   2
+    ElseIf 2
+        y = x ^ 2
+    ElseIf x>5 Then
+        y = 25 - x
+    End If
+    Text2 .text = y
+End Sub Private Sub Command1_Click()
+    Dim x As Single, y As Single
+    x = Text1.Text
+    If x 
+        y = 2 - x
+    ElseIf x 
+        y = x   2
+    ElseIf x 
+        y = x ^ 2
+    Else
+        y = 25 - x
+    End If
+    Text2.text = y
+End Sub 
+代码设计一比较直观，阅读起来比较方便，而代码设计二能承前启后，程序比较简洁。
+在代码设计二中给x赋值后进行判断，如果x y = 2 – x，End If；否则如果xy = x 2，End If；否则如果xy = x ^ 2，End If；否则执行y = 25–x，End If。因为**个ElseIf 的“否则”就意味着x>0，所以后面无须再加x>0的条件；其他“否则”也有类似的作用。
+4．If语句的嵌套
+If语句的嵌套是指在If语句（单分支或双分支，或多分支结构）的语句块中又包含一个If语句（单分支或双分支，或多分支结构）。
+格式例如：
+ 
+If    ThenIf    Then … End If … 
+End If 
+ 
+说明：
+（1）对于嵌套结构，为了增强程序的可读性，应该采用缩进形式书写；
+（2）当If语句是多行形式时，If必须有End If与之配对，表示If结构的结束。对于多层If嵌套，End If与它*接近的If配对。
+3.2.2  Select Case语句  
+Select Case语句也称情况语句，是多分支结构的另一种表示形式。其语句格式为：
+ 
+Select Case 测试表达式>Case 表达式列表1>语句块1[Case 表达式列表2>语句块2>]…[Case 表达式列表n>语句块n>][Case Else 语句块n 1>]
+End Select 
+ 
+Select Case语句的功能是首先计算的值，然后用计算结果从前到后依次与每个Case子句的的值进行比较，如果匹配，则执行该Case子句后的语句块，然后执行End Select语句；如果没有匹配的，则执行Case Else子句后的语句块n 1，执行End Select语句。具体流程如图3.10所示。
+ 
+图3.10  Select Case语句流程图
+说明：
+（1）有4种形式，如表3.1所示。
+表3.1  Case语句“表达式列表”的形式形式应用示例表达式Case 2表达式1 To表达式2Case 60 To 100Is关系运算符 表达式Case Is 用逗号分隔的以上3种形式的列表Case 1 To 4, 6 To 8, 10, 13, Is >15 
+关键字To用来指定一个范围，在这种情况下必须把较小的值写在前面，把较大的值写在后面。例如下面的Case表达都是错误的。
+ 
+Case 10 To 1
+Case "Z" To "A"
+ 
+可以用关键字Is及后面的关系运算符和表达式来指定一个数值范围，例如Is>60，但不能用逻辑运算符将两个或多个类似的指定数值范围组合在一起，例如Case Is>60 And Is
+（2）Select Case语句与If…Then…[ElseIf…][Else…]End If语句的功能类似，一般来说可以使用If…Then…[ElseIf…][Else…]End If条件语句的地方也可以使用情况语句。
+（3）根据流程，如果“测试表达式”与多个Case子句相匹配，则只执行**个匹配的Case子句的语句块，然后执行End Select语句。
+（4）在Select Case结构中，如果测试表达式的值不与任何一个Case子句相匹配，则执行Case Else子句中的语句块，然后执行End Select语句，如果没有Case Else子句，则不执行任何语句块，而执行 End Select语句。
+【例3.4】 编程求指定的某一年某个月份的天数，程序界面如图3.11所示。要求在Text1中输入年，在Text2中输入月（1～12），然后单击“求天数”按钮计算指定的某年某月份的天数，并在Text3中输出。
+分析：月份有3种情况，即31天的月份、30天的月份和28或29天的月份。第3种情况与是否为闰年有关，闰年的二月为29天，非闰年的二月为28天。能被4整除但不能被100整除的年（如2004年），或者能被400整除的年（如2000年）都为闰年。
+代码设计：
+ 
+Private Sub Command1_Click()Dim yea As Integer, mon As Integeryea = Val(Text1.Text)mon = Val(Text2.Text)Select Case monCase 2  				' 2月If (yea Mod 4 = 0 And yea Mod 100 Text3.Text = 29ElseText3.Text = 28End IfCase 4, 6, 9, 11 				' 4、6、9、11月Text3.Text = 30Case Else					' 其他月Text3.Text = 31End Select
+ End Sub
+ 
+本例代码的Select Case语句部分也可以用If…Then…[ElseIf… ][Else…]End If语句来描述：
+If mon = 2 Then  ' 如果是2月If (yea Mod 4 = 0 And yea Mod 100 Text3.Text = 29ElseText3.Text = 28End If
+ElseIf mon = 4 Or mon = 6 Or mon = 9 Or mon = 11 ThenText3.Text = 30
+ElseText3.Text = 31
+End If
+ 
+可以看出，使用Select Case语句来判断月份简化了条件的书写。
+3.2.3  IIf函数  
+在VB中可以使用IIf函数，具体语法格式如下：
+ 
+IIf(条件,表达式1,表达式2)
+ 
+该函数的功能是对“条件”进行判断，当“条件”为True时函数返回表达式1的值，否则返回表达式2的值。
+说明：
+（1）“条件”是一个逻辑量，或通过类型转换得到的逻辑量。
+（2）IIf函数与If…Then…Else语句的作用类似。
+例如：
+ 
+r = IIf(x > 0, x, -x) 
+If x > 0 Then r = x Else r = -x
+ 
+两条语句的功能相同。
+再如： 
+ 
+y = 100
+Print IIf(y 
+ 
+等价于下面的条件语句，
+ 
+y = 100
+If y Print "y小于100"
+ElsePrint "y大于等于100"
+End If
+ 
+可以看出，用IIf函数在一定程度上简化了程序。
+3.3  循 环 结 构
+用顺序结构和选择结构可以解决简单的、不出现重复的问题，但是在现实生活中许多问题是需要重复处理的，当编程解决这些实际问题时经常要用到循环结构。例如求若干个数据的和；求一个自然数的阶乘；输入一批数据等。循环结构是指某些语句根据一定的条件反复执行多次，这是程序设计中的一种很重要的结构，循环结构又称重复结构。循环结构的特点是在给定条件成立时反复执行某程序段，直到条件不成立为止。给定的条件称为循环条件，反复执行的程序段称为循环体。VB提供了多种循环语句，可以组成各种不同形式的循环结构。本节将介绍While语句、Do…While语句和For语句等循环结构的使用。
+3.3.1  For循环结构  
+如果用户知道循环的次数，一般采用For…Next循环结构，其基本格式如下：
+ 
+For 循环变量> = 初值> To 终值> [Step 步长>]
+   	语句块>
+Next 循环变量>
+ 
+For…Next循环结构语句的流程如图3.12所示。
+ 
+图3.12  For…Next循环结构流程
+说明：
+（1）“”“”“”“”均为数值类型，在多数情况下为整型或长整型。
+（2）“”为可选参数，可正可负。一般情况下，若“”小于“”，则“”为正；若“”大于“”，则“”为负。如果省略“”，则系统默认步长为1。如果步长为0，循环将永远不能结束（死循环）。
+（3）循环次数：N=Int((终值-初值)/步长 1)。
+【例3.5】 编写程序，界面如图3.13所示，要求单击“运行”按钮随机产生5个两位正整数，计算它们的和与乘积，并分别在Text1、Text2、Text3中显示出来。
+代码设计：
+Private Sub Command1_Click()Dim i As IntegerDim x As IntegerDim Sum As IntegerDim Product As Double	' 累乘积变量数据类型定义为Double类型，以免溢出Sum = 0      	         	' 累加和变量初值设置为0Product = 1  			' 累乘积变量初值设置为1Text1.Text = ""Randomize    	         ' 初始化随机数生成器，从系统计数器获取下一数的种子For i = 1 To 5x = Int((99 - 10   1) * Rnd   10)Text1.Text = Text1.Text & " " & CStr(x)Sum = Sum   x  	 		' 累加操作Product = Product * x 	' 累乘操作Next iText2.Text = SumText3.Text = Product
+End Sub
+3.3.2  Do…Loop循环结构  
+For循环解决循环次数事先已知的问题，对于循环次数事先未知的问题可以使用Do…Loop循环来解决。
+Do…Loop循环有4种演变形式，根据条件判断的关键字分为当型循环和直到型循环；根据判断条件的位置分为判断前置式和判断后置式。无论哪一种都是根据循环条件决定是否继续执行循环，是有条件循环结构。4种Do…Loop语句的格式和流程如表3.2所示。
+说明：
+（1）“循环条件”可以是关系表达式或逻辑表达式，也可以是数值表达式（非0→           True，0→False）。
+（2）判断前置式的Do…Loop循环是先判断循环条件，决定是否执行循环体，因此循环体可能一次都不执行。判断后置式的Do…Loop循环是先执行循环体，然后再判断循环条件，因此循环体至少要被执行一次。
+（3）在一般情况下，这4种循环形式可以相互替代。当While循环和Until循环相互替代时，循环条件应当相反。对于当（While）型循环而言，当“循环条件”满足（为True）时执行循环体。对于直到（Until）型循环，当“循环条件”为False时执行循环体，直到“循环条件”满足（为True）时为止。
+表3.2  Do…Loop语句的格式和流程 While循环（当型循环）Until循环（直到型循环） 
+ 
+ 
+判
+断
+前
+置
+式Do While 循环条件
+   [语句块1]
+   [Exit Do]
+   [语句块2]
+Loop Do Until循环条件
+   [语句块1]
+   [Exit Do]
+   [语句块2]
+Loop  
+ 
+判
+断
+后
+置
+式Do
+   [语句块1]
+   [Exit Do]
+   [语句块2]
+Loop While 循环条件 Do
+   [语句块1]
+   [Exit Do]
+   [语句块2]
+Loop Until 循环
+          条件  
+例如求s=1 2 … 100，用4种Do…Loop形式分别实现。程序如下：
+ Private Sub Command1_Click()
+    Dim i As Integer, s As Integer
+    i = 1
+    Do While i 
+        s = s   i
+        i = i   1
+    Loop
+    Print s
+End SubPrivate Sub Command2_Click()
+    Dim i As Integer, s As Integer
+    i = 1
+    Do Until i > 100
+        s = s   i
+        i = i   1
+    Loop
+    Print s
+End SubPrivate Sub Command1_Click()
+    Dim i As Integer, s As Integer
+    i = 1
+    Do 
+        s = s   i
+        i = i   1
+    Loop While i 
+    Print s
+End SubPrivate Sub Command1_Click()
+    Dim i As Integer, s As Integer
+    i = 1
+    Do 
+        s = s   i
+        i = i   1
+    Loop Until i > 100
+    Print s
+End Sub 
+（4）程序运行时，对于While循环如果循环条件总是为True，或对于Until循环如果循环条件总是为False，则不停地重复执行循环体，形成死循环。这是程序设计中容易出现的一种严重错误，应当避免。在使用Do…Loop循环时，随着循环体一次又一次地被执行，应当能使循环条件发生改变，能在有限次数的循环后退出循环。例如下面的程序，循环条件始终为True，构成死循环。
+ 
+Private Sub Command1_Click()Dim b As Boolean, x As Integerb = Truex=12Do While bPrint xLoop
+End Sub
+ 
+发生死循环后，用户可按Ctrl Break组合键中断程序的运行，从而加以解除。
+（5）在循环体中可以包含一条或多条Exit Do语句，用来强行退出循环，转至Loop语句的下一条语句执行。Exit Do语句一般放在某个条件结构中，如If  Then  Exit Do。
+（6）在Do…Loop循环中，可以既不使用While关键字，也不使用Until关键字以及后面的循环条件，语法格式为：
+ 
+Do [语句块1][Exit Do][语句块2]
+Loop
+ 
+这是一种无条件循环结构，相当于条件永远成立的While循环，或条件永远不成立的Until循环。它可与Exit Do语句配合，构造实用的循环结构，例如求s=1 2 … 100。
+ 
+Private Sub Command1_Click()Dim i As Integer, s As Integeri = 1Dos = s   ii = i   1If i > 100 Then Exit DoLoopPrint s
+End Sub
+【例3.6】 利用下式计算e的值，丢弃所有小于的数据项，要求程序运行界面如图3.14所示，单击“计算”按钮计算e的值，并在Text1中输出。
+ 
+分析：通过观察，本题总体上是一个求累加和的问题，可以通过循环来实现求解，因为用户只知道循环结束的条件——丢弃所有小于的数据项，却不知道循环累加应该执行的次数，所以选用Do…Loop结构比较合适。再观察每个数据项的分母，发现可以通过前项分母求后项分母，比如第n-1项的分母为(n-1)!的值，则求第n项的分母只需用(n-1)!的值再乘以n即可。
+代码设计： 
+ 
+Private Sub Command1_Click()Dim n As Integer, fenmu As Long, tongxiang As SingleDim sum As Singlesum = 0   				' 累加前清0n = 0            			' n设置为0，预备循环从第0项开始累加fenmu = 1        			' 设置fenmu为第0项的分母1tongxiang = 1     		' 设置tongxiang（通项）为第0项的1Do While tongxiang > 10 ^ -6   sum = sum   tongxiang      	' 累加第n项n = n   1           		  	' 准备下一项fenmu = fenmu * n            	' 求下一项的分母tongxiang = 1 / fenmu       	' 求下一项的值LoopText1.Text = sum
+End Sub
+ 
+该代码中的Do…Loop结构可以换成其他形式，请读者自行设计。
+3.3.3  While…Wend循环结构 
+While…Wend循环结构的语法格式如下：
+ 
+While 条件表达式>[语句块]
+Wend 
+ 
+当“条件表达式”的值为True时执行循环体，否则退出循环，执行Wend的下一条语句。While…Wend循环结构是早期Basic语言的循环语句，现在它的功能已完全被Do…Loop循环结构包括。
+例如求s=1 2 … 100，用While…Wend循环实现。程序如下：
+ 
+Private Sub Command1_Click()Dim i As Integer, s As Integeri = 1While i s = s   ii = i   1WendPrint s
+End Sub
+3.3.4  循环的嵌套  
+循环的嵌套指一个循环的循环体中又完整地包含另一个循环结构，也称为多重循环。没有嵌套的循环称为单重循环，嵌套一层称为二重循环，嵌套二层称为三重循环。循环嵌套的层数可以根据待解决的问题需要而定。为了提高程序的可读性，在输入（或书写）每层的循环体时采用缩进形式。
+例如下列程序：
+ 
+Private Sub Form_Click()Dim i As Integer, j As IntegerFor i = 1 To 4For j = 1 To 4Print i; j    'A语句Next jPrint Next i
+End Sub
+ 
+执行时，外循环变量i取1时执行内循环，j依次取1、2、3、4，执行A语句4次；外循环变量i取2时j又依次取1、2、3、4，执行A语句4次；…，所以内循环的循环体A语句（Print i; j）共执行4´4次，即16次。输出结果如图3.15所示。
+【例3.7】 打印九九乘法表，要求运行程序，单击窗体，输出九九乘法表，如图3.16所示。
+ 
+图3.16  生成九九乘法表程序界面
+代码设计：
+ 
+Private Sub Form_Click()Dim i As Integer, j As IntegerDim str As StringPrintPrint Tab(35); "9*9乘法表"          	' 打印标题Print                              		' 产生空行For i = 1 To 9For j = 1 To istr = i & "×" & j & "=" & i * jPrint Tab((j - 1) * 9   1); str;  	' 注意str后面要跟分号Next jPrint   							' 换行Next i
+End Sub
+ 
+九九乘法表由9行组成，设置i为外循环变量，分别取1、2、…、9，控制输出9行；第i行由i列组成，设置j为内循环变量，分别取1到i，控制输出i列。
+对于循环的嵌套做以下说明：	
+（1）多个For循环形成嵌套时内循环变量与外循环变量不能同名；
+（2）外循环必须完全包含内循环，不能交叉。形如下面的循环嵌套是错误的。
+ Do While/Until…
+    …
+    For j=…
+Loop
+    …
+    Next jFor  i=1  To  10
+    For  j=1 To  20
+    …
+Next  i	
+        …
+    Next  j 
+（3）For循环结构和Do…Loop循环结构可以互相嵌套，例如：
+ For i=…
+     …
+    For j=…
+     …
+    Next j
+    …
+Next iFor i=…
+     …
+    Do While/Until …
+        …
+    Loop
+    …
+Next iDo While/Until…
+    …
+    For j=…
+         …
+    Next j
+    …
+LoopDo While/Until…
+    …
+    Do While/Until…
+        …
+    Loop
+    …
+Loop 
+（4）循环结构可以与选择结构互相嵌套。在循环结构的循环体中可以嵌入选择结构，在选择结构的一个分支中可以嵌入一个循环结构。例如：
+ For i=…
+       …
+    If …Then
+       …
+    End If
+    …
+Next i If …Then 
+     …
+    For i=…
+     …
+    Next i
+     …
+End IfFor i=…
+     Select Case…
+       Case  …
+        …
+       Case …
+        …
+     End Select
+Next i  
+当然，无论是循环嵌套还是循环结构与选择结构的互相嵌套都是要根据实际解决问题的需要而定。值得一提的是，正因为各种结构之间的嵌套，程序员才能只凭借3种基本结构就得以解决纷繁复杂的各类问题。
+3.4  程 序 示 例 
+【例3.8】 编程实现十进制正整数和二进制正整数的相互转换，要求在Text1中输入十进制正整数，单击按钮将其转换为二进制数，并在Text2中显示；在Text2中输入二进制正整数，单击按钮将其转换为十进制数，在Text1中显示。程序运行界面如图3.17所示。
+ 
+图3.17  二、十进制转换程序界面
+程序如下：
+Private Sub Command1_Click()Dim d As IntegerDim b As Integer, s As Stringd = Text1.Text      ' 取十进制数Do Until d = 0b = d Mod 2s = b & sd = d  2LoopText2.Text = s
+End Sub
+Private Sub Command2_Click()Dim i As Integer, d As IntegerDim s As Strings = Trim(Text2.Text)  ' 取二进制数For i = 1 To Len(s)d = d * 2   Mid(s, i, 1)Next iText1.Text = d
+End Sub
+ 
+【例3.9】 输入一个正整数，判断该正整数是否为素数。所谓素数是指只能被1和自身整除，不能被其他整数整除的自然数。要求：程序运行界面如图3.18所示，在Text1中输入一个正整数，单击“判断”按钮判断该正整数是否为素数，用Label2输出判断结果。
+判断整数N是不是素数的基本方法是将N分别除以2, 3, …, N-1，若都不能整除，则N为素数。因为N=Sqr(N)*Sqr(N)，所以当N能被大于等于Sqr(N)的整数整除时一定存在一个小于等于Sqr(N)的整数，使N能被它整除，因此判断N是不是素数只要判断N能否被2、3、…、Sqr(N)整除即可。
+代码设计一：
+ 
+Private Sub Command1_Click()
+    Dim N As Integer, I As Integer, K As Integer
+    N = Val(Text1.text)
+    K = Int(Sqr(N))   				' 或K=Sqr(N), 或K=N-1, 或K=N/2
+    For I = 2 To K
+        If N Mod I = 0 Then Exit For	' 如果N能被其他整数整除, 则提前退出For循环
+    Next I
+    If I > K Then     				' 如果是素数, 那么
+        Label2.Caption = N & " 是素数"
+    Else
+        Label2.Caption = N & " 不是素数"
+    End If
+End Sub
+ 
+代码设计二：
+ 
+Private Sub Command2_Click()
+    Dim N As Integer, I As Integer, K As Integer
+    Dim flag As Boolean 	' 声明flag变量作为标志, 值为True代表是素数, 否则不是素数
+    N = Val(Text1)
+    flag = True   			' 先认为N是素数
+    K = Int(Sqr(N))
+    For I = 2 To K
+        If N Mod I = 0 Then  	' 如果N能被其他整数整除，那么
+            flag = False    	' 标明不是素数
+            Exit For        	' 提前退出循环
+        End If
+    Next I
+    If flag Then			    ' 如果是素数, 那么
+        Label2.Caption = N & " 是素数"
+    Else
+        Label2.Caption = N & " 不是素数"
+    End If
+End Sub
+ 
+【例3.10】 找出所有的水仙花数，程序界面如图3.19所示。所谓水仙花数是指一个3位数，其各位数字的立方和等于数字本身。例如371=3^3 7^3 1^3，则371是水仙花数。要求：单击“找水仙花数”按钮，找出并在列表框中输出所有的水仙花数，在Text1中输出水仙花数的个数。
+本例可采用“穷举法”解题，所谓穷举法就是把可能的情况一一列举出来，一一检验是否符合某些条件的解题方法。比如本例一一列举100～999中的每一个数，一一检验是否为水仙花数。
+下面采用两种方法编写Command1_Click()事件过程。
+方法一：
+ 
+Private Sub Command1_Click()Dim i As Integer, n As IntegerDim a As Integer, b As Integer, c As Integern = 0For i = 100 To 999a = Mid(i, 1, 1)  				' 或a=i100, 取百位上的数字b = Mid(i, 2, 1)  				' 或b=(i10) Mod 10, 取十位上的数字c = Mid(i, 3, 1)     			' 或i Mod 10, 取个位上的数字If i = a ^ 3   b ^ 3   c ^ 3 Then	' 判断是否为水仙花数n = n   1       					' 记录个数List1.AddItem i     				' 显示水仙花数End IfNext iText1.Text = n       					' 显示水仙花个数
+End Sub
+ 
+方法二：
+ 
+Private Sub Command1_Click()
+    Dim i As Integer, n As Integer
+    Dim a As Integer, b As Integer, c As Integer
+    n = 0
+    For a = 1 To 9
+       For b = 0 To 9
+          For c = 0 To 9
+              i = a * 100   b * 10   c
+              If i = a ^ 3   b ^ 3   c ^ 3 Then
+                 n = n   1       				' 记录个数
+                 List1.AddItem i     			' 显示水仙花数字
+              End If
+          Next c
+       Next b
+    Next a
+    Text1.Text = n       						' 显示水仙花个数
+End Sub
+ 
+这两种方法的结果完全一致，两者的区别在于穷举的对象不同。方法一用了一重循环，穷举了3位数100～999，循环体执行900次，一一判断每个3位数是否为水仙花数；方法二采用了三重循环，穷举了百（1～9）、十（0～9）、个（0～9）位的数字组合，即(1, 0, 0)、(1, 0, 1)、……、(9, 9, 9)，*里层的循环体也执行900次，分别判断3个数字组成的3位数是否为水仙花数。两种算法的执行效率相当。
+习  题  3 
+1．简答题
+（1）条件语句都有哪几种格式？该如何使用？
+（2）简述For…Next语句的执行过程。
+（3）当型和直到型Do…Loop语句有什么区别？
+（4）什么是循环的嵌套？
+2．填空题
+（1）设窗体的Click事件中有以下代码，**次单击该窗体，输出i的值是（    ），s的值是（    ）。
+ 
+Private Sub Form_Click()s = 0For i = 2.4 To 4.7 Step 0.6s = s   5Next iPrint i, s
+End Sub
+ 
+（2）设有以下循环：
+ 
+y=1
+Doy=y 2Print y
+Loop Until（        ）
+ 
+要求程序运行时执行5次循环体，请填空。
+（3）设窗体上有一个命令按钮Command1并有以下事件过程：
+ 
+Private Sub Command1_Click()
+  Dim n As Integer, x As Long, s As Long
+  s = 1: x = 1: n= 2
+  Dox = x * ns = s   xn = n  1
+  Loop Until n > 5
+  Print s
+End Sub
+ 
+该程序的功能是计算并输出一个表达式的值，该表达式是（    ）。
+ 
+（4）下面程序的功能是将一个正整数的数字逆序输出。例如输入3456，则输出6543；输入1702，则输出2071。请填空。
+ 
+Private Sub Command1_Click()
+  Dim k As Integer
+  k = InputBox("请输入一个正整数：")
+  While k > （        ）Print n Mod 10;k = k  10
+  Wend
+  Print （        ）
+End Sub
+ 
+（5）下面程序的功能是求满足不等式1 22 32 … n2m的*大n，请填空。
+ 
+Private Sub Command1_Click()
+  Dim m%, s&, n&
+  m = InputBox("请输入一个大于100的整数")
+  n = （        ）
+  s = 0
+  Do While s n = n   1s = s   n * n
+  Loop
+  Print "满足不等式的*大n是";（        ）
+End Sub
+ 
+（6）设窗体上有一个命令按钮Command1和两个文本框Text1与Text2，并有以下事件过程。
+ 
+Private Sub Command1_Click()
+    n = Text1.Text
+    Select Case n
+       Case 1 To 50
+            n = 2
+       Case Is 
+            n = 1
+       Case 10
+            n = 5
+    End Select
+    Text2.Text = n
+End Sub
+ 
+程序运行后，如果在文本框Text1中输入10后单击Command1按钮，则Text2中显示的内容是（    ）。
+（7）下面程序的功能是从键盘输入一部分学生的考试分数，当输入负数时结束输入，然后输出其中的*高分和*低分。请填空。
+ 
+Private Sub Form_Click()
+    Dim x As Single, max As Single, min As Single
+    x = InputBox("请输入成绩：")
+    max = x: min = x
+    Do While （        ）
+       If （        ） Then max = x
+       If x 
+       x = InputBox("请输入成绩：")
+    Loop
+    Print "*高分是："; max
+    Print "*低分是："; min
+    End Sub
+ 
+（8）运行下列程序，单击Command1按钮，窗体上显示的**行内容是（    ），第二行内容是（    ），第三行内容是（    ）。
+ 
+Private Sub Command1_Click()
+    Dim m As Integer,n As Integer
+    m = 4:n = 3
+    Do Until m > 10
+        n = n / 2
+        Do Until n > 10
+           m = (m   n)  2   n
+           n = n   5
+           Print m, n
+        Loop
+        m = m - 3
+    Loop
+End Sub
+ 
+（9）如图3.20所示，在Text1中输入一个整数n，单击“查找”按钮将会在List1中显示一组连续的整数，这些整数的和等于n。请填空完成程序的功能。
+ 
+图3.20  填空题（9）的图
+Private Sub Command1_Click()
+    Dim n%, sum%, st$, i%, j%, k%
+    n = Text1
+    For i = 1 To n - 1
+        （        ）
+        For j = i To n
+            sum = （      ）
+            If sum = n Then
+               st = ""
+               For k = i To j
+                   st = （      ）
+               Next k
+              List1.AddItem Left(st, Len(st) - 1)
+            End If
+        Next j
+    Next i
+End Sub
+ 
+（10）运行以下程序，单击Command1按钮，在窗体上显示x的值是（    ），y的值是（    ），i的值是（    ）。
+ 
+Private Sub Command1_Click()
+      Dim i As Integer, x As Integer,y As Integer
+      x = 1: y = 8
+      For i = x To y Step x   1
+        x = x   1
+        y = y   1
+        i = i   1
+      Next i
+      Print x, y, i
+End Sub
+ 
+（11）下面的过程是将列表框List1中重复的项目删除，只保留一项。 
+ 
+Private Sub Command1_Click()
+    For i = 0 To List1.ListCount - 1
+        For j = List1.ListCount - 1 To （       ）Step - 1
+            If List1.List(i) = List1.List(j) Then
+                （          ）
+            End If
+        Next j
+    Next i
+End Sub
+ 
+（12）下列程序允许用户在组合框（Combo1）中输入并按Enter键后将一个没有的项目添加到组合框中。 
+Sub Combo1_Keypress(KeyAscii As Integer)
+    Dim flag As Boolean
+    If KeyAscii = 13 Then
+        flag = False
+        For i = 0 To Combo1.ListCount - 1
+            If （     ） Then
+                flag = True
+                Exit For
+            End If
+        Next i
+        If （     ） Then
+            （        ）
+        Else
+            MsgBox ("已有该项目！")
+        End If
+    End If
+End Sub
+ 
+3．选择题
+（1）对于“If x = 60 Then y = 6”，下面说法正确的是（    ）。 
+A．x = 60和y = 6均为赋值语句
+B．x = 60和y = 6均为关系表达式
+C．x = 60为赋值语句，y = 6为关系表达式 
+D．x = 60为关系表达式，y = 6为赋值语句
+（2）以下Case语句中错误的是（    ）。
+A．Case 60 To 100 				B．Case Is>60
+C．Case Is>40 And Is 80
+（3）以下当型循环：
+ 
+While Not 条件表达式
+     循环体
+Wend
+ 
+如果进入循环执行循环体语句，则“条件表达式”的值是（    ）。
+A．1 			B．True 		C．-1			D．False 
+（4）执行下列程序，输出的x1的值为（    ），x2的值为（    ），x3的值为（    ）。
+ 
+Private Sub Command1_Click()
+  Dim x1 %, x2 %, x3 %, i %, j %, k % 
+  For i = 1 To 3
+      For j = 1 To i
+          For k = j To 3
+              x3 = x3   1
+          Next k
+          x2 = x2   1
+      Next j
+      x1 = x1   1
+  Next i
+  Print x1, x2, x3
+End Sub
+ 
+A．3、6、14 	B．3、8、16 	C．3、4、12		D．3、9、18
+（5）对于循环语句“For i=n to m step p”，若在循环体内有以下4条语句，则会影响循环执行次数的是（    ）。
+A．n=n 1		B．m=m p		C．i=i 3			D．p=3*p
+（6）以下循环语句在任何情况下都至少执行一次循环体的是（    ）。
+ A．Do While 
+        循环体
+   LoopB．While 
+         循环体
+   WendC．Do 
+         循环体
+   Loop Until D．Do Until 
+         循环体
+   Loop  
+（7）窗体上有一个文本框控件Text1和一个命令按钮Command1，编写并运行以下程序后单击Command1按钮，在Text1中显示的值是（    ）。
+ 
+Private Sub Command1_Click()
+  Dim i As Integer, n As Integer
+  For i = 1 To 50
+      i = i   3
+      n = n   1
+      If i > 10 Then Exit For
+  Next i
+  Text1.Text = Str(n)
+End Sub
+ 
+A．5			B．4			C．3			D．2
+（8）窗体上有一个名称为Command1的命令按钮，对其编写以下事件过程：
+ 
+Private Sub Command1_Click()
+    s1 = "369"
+    s2 = Trim(Str(s1))
+    For n = 1 To 3
+        Print （       ）
+    Next
+End Sub
+ 
+程序运行后单击命令按钮，要求在窗体上显示以下内容：
+ 
+9
+69
+369
+ 
+则在（    ）处应填入的内容为（    ）。
+A．Left(s1, n)		B．Right(s1, n)	C．Mid(s1, n,1)		D．Mid(s1, n,n)
+（9）窗体上有名称分别为Command1和Text1的命令按钮和文本框，编写以下程序：
+ 
+Private Sub Command1_Click()
+    score = InputBox("请输入课程分数：")
+    grade = "成绩等级为：" _
+    & IIf(score > 0 And score 
+    & IIf(score >= 60 And score 
+    & IIf(score >= 80 And score 
+    Text1.Text = grade
+End Sub
+ 
+程序运行后，如果从键盘上输入76，则文本框中显示的内容是（    ）。
+A．成绩等级为：不及格			B．成绩等级为：优秀
+C．成绩等级为：	良好				D．成绩等级为：及格
+（10）如图3.21所示设计界面，在名称为List1的列表框中输入若干项目，运行以下程序后在Text1中输入“学”，单击Command1按钮，则在Text2中显示的内容是（    ）。
+A．学		B．数学	化学			C．化学	数学		D．没有匹配的项目
+ 
+Private Sub Command1_Click()
+    Dim str As String, s As String, k As Integer
+    s = Text1
+    str = ""
+    For k = List1.ListCount - 1 To 0 Step - 1
+        If InStr(List1.List(k), s) > 0 Then
+           str = str & List1.List(k) & "  "
+        End If
+    Next k
+    If str = "" Then
+       Text2 = "没有匹配的项目"
+    Else
+       Text2 = str
+    End If
+End Sub
+ 
+4．编程题
+（1）编写程序计算以下分段函数的值。
+ 
+（2）从键盘输入一个正整数，编程求该数的所有质因子，并在窗体中按100=2*2*5*5的形式输出。
+（3）编写程序，根据用户在文本框Text1中输入的文本统计其中数字（0～9）中奇数和偶数的个数、英文字母（区分大小写）的个数和其他字符的个数，并在窗体中输出统计结果。
+（4）编程求某一正整数的各位数字之和，并用MsgBox输出。
+（5）判断一个数是否为回文数，如121、1235321、565、666、9229等都是回文数。
+（6）设a、b、c都是大于0的整数，编写程序，找出30以内满足a2 b2=c2的整数组合。程序界面如图3.22所示。
+ 
+图3.22  编程题（6）的图
+（7）设计程序用二分法求方程x4-x3-4x2   1=0在区间 [0, 1]上的一个实根。
+算法提示：若方程f (x)=0在区间[a, b]上有一个实根，则f (a)与f (b)必然异号，即          f (a)*f (b)c=(a b)/2，若f (a)*f (c)>0，则令a=c，否则令b=c。当b-a的绝对值小于或等于给定误差要求时，则c就是要求的根。

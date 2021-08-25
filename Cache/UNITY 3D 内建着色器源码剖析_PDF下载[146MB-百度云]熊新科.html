@@ -1,0 +1,323 @@
+UNITY 3D 内建着色器源码剖析 PDF下载 熊新科 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711550704
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711550704
+<p>书名:UNITY 3D 内建着色器源码剖析</p><p>作者:熊新科</p><p>页数:334</p><p>定价:¥89.0</p><p>出版社:人民邮电出版社</p><p>出版日期:2018-04-01</p><p>ISBN:9787115507044</p><p><h2>本书特色</h2></p>[<p>
+本书既是一本Unity 3D着色器代码分析教程，也是一本Unity 3D着色器编程参考手册。全书共12章，主要内容包括：实时3D渲染流水线，辐射度、光度和色度学基本理论，Unity 3D着色器系统，着色器工具函数，Unity 3D引擎的多例化技术，前向渲染和延迟渲染，Unity 3D的全局光照和阴影，UnityShadow Library.cginc文件分析，AutoLight.cginc文件分析，基于物理的光照模型，Unity 3D标准着色器和Standard. shader文件分析，片元着色器实时绘制图像实战案例。
+本书适合Unity Shader的游戏开发者、程序员阅读，也可供相关专业人士参考。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>本书既是一本Unity 3D着色器代码分析教程，也是一本Unity 3D着色器编程参考手册。全书共12章，主要内容包括：实时3D渲染流水线，辐射度、光度和色度学基本理论，Unity 3D着色器系统，着色器工具函数，Unity 3D引擎的多例化技术，前向渲染和延迟渲染，Unity 3D的全局光照和阴影，UnityShadow Library.cginc文件分析，AutoLight.cginc文件分析，基于物理的光照模型，Unity 3D标准着色器和Standard. shader文件分析，片元着色器实时绘制图像实战案例。
+本书适合Unity Shader的游戏开发者、程序员阅读，也可供相关专业人士参考。</p>]<p><h2>作者简介</h2></p>[<p>熊新科，资深游戏开发工程师。2003年进入游戏行业，先后参与多项游戏的开发。乐于分享技术，活跃于各大Unity技术圈。</p>]<p><h2>目录</h2></p>
+
+目　录
+
+第 1章　实时3D渲染流水线　1
+1.1　概述　1
+1.2　顶点处理阶段　2
+1.2.1　顶点的组织方式　2
+1.2.2　坐标系统和顶点法线的确定方式　3
+1.2.3　把顶点从模型空间变换到世界空间　5
+1.2.4　把顶点从世界空间变换到观察空间　9
+1.2.5　把顶点从观察空间变换到裁剪空间　11
+1.3　光栅化阶段　18
+1.3.1　裁剪操作　18
+1.3.2　透视除法　18
+1.3.3　背面剔除操作　19
+1.3.4　视口变换　21
+1.3.5　扫描转换　22
+1.4　片元处理与输出合并阶段　22
+1.4.1　纹理操作　23
+1.4.2　输出合并中的深度值操作　24
+1.4.3　输出合并中的Alpha值操作　26
+1.4.4　Unity 3D ShaderLab中的Alpha混合指令及深度测试指令　27
+第 2章　辐射度、光度和色度学基本理论　30
+2.1　辐射度学基本理论　30
+2.1.1　立体角　32
+2.1.2　点光源、辐射强度和辐射亮度　33
+2.1.3　辐射出射度和辐射入射度　34
+2.2　光度学基本理论　34
+2.3　色度学基本理论　36
+2.3.1　什么是颜色　36
+2.3.2　颜色的数字化及CIE1931-RGB颜色模型　37
+2.3.3　CIE1931-XYZ颜色模型　40
+2.3.4　CIE1931-Yxy颜色模型　40
+2.4　伽马校正和sRGB颜色空间　40
+2.4.1　伽马校正　40
+2.4.2　sRGB颜色空间　44
+2.4.3　Unity 3D中的伽马空间和线性空间　45
+第3章　Unity 3D着色器系统　47
+3.1　从一个外观着色器程序谈起　47
+3.1.1　BasicDiffuse着色器展开后的代码分析　49
+3.1.2　外观着色器的编译指示符　56
+3.1.3　传给外观着色器函数的参数　58
+3.2　直接编写顶点着色器和片元着色器　59
+3.2.1　用Cg语言编写的包含着色器功能的代码片段　59
+3.2.2　声明目标渲染器　60
+3.2.3　着色器的语义　61
+3.3　在Cg代码中访问着色器属性块　66
+3.3.1　在着色器代码中声明材质属性　66
+3.3.2　在着色器代码中声明对应于材质属性的变量　67
+3.4　使用着色器多样体处理多种情况　67
+3.4.1　编译指示符multi_compile和shader_feature的使用方式与区别　67
+3.4.2　多样体关键字的使用限制　68
+3.4.3　内置的multi_compile指示符快捷使用方式　68
+3.5　多平台着色器代码的支持　68
+3.6　确定着色器编译器的版本　69
+3.6.1　和着色器编译器版本相关的宏　69
+3.6.2　消除着色器代码中各平台的语义差异性　70
+3.6.3　关闭可忽视的编译警告　72
+3.6.4　Unity 3D Shader的基本数据类型　72
+3.6.5　消除平台差异性　73
+3.6.6　统一着色器常量缓冲区的宏定义　75
+3.6.7　HLSL语言中的分支预测特性　75
+第4章　引擎提供的着色器工具函数和数据结构　78
+4.1　UnityShaderVariables.cginc文件中的着色器常量和函数　78
+4.1.1　进行变换操作用的矩阵　78
+4.1.2　和摄像机相关的常量缓冲区　81
+4.1.3　与光照相关的工具函数和内置光源　83
+4.1.4　与阴影相关的着色器常量缓冲区　84
+4.1.5　与逐帧绘制调用相关的着色器常量缓冲区　86
+4.1.6　与雾效果相关的常量缓冲区　86
+4.1.7　与光照贴图相关的常量缓冲区　87
+4.2　UnityCG.cginc文件中的工具函数和宏　90
+4.2.1　数学常数　90
+4.2.2　与颜色空间相关的常数和工具函数　90
+4.2.3　描述顶点布局格式的结构体　92
+4.2.4　用于进行空间变换的工具函数　93
+4.2.5　与光照计算相关的工具函数　97
+4.2.6　与HDR及光照贴图颜色编解码相关的工具函数　102
+4.2.7　把高精度数据编码到低精度缓冲区的函数　107
+4.2.8　法线贴图及其编解码操作的函数　110
+4.2.9　线性化深度值的工具函数　113
+4.2.10　合并单程立体渲染时的左右眼图像到一张纹理的函数　115
+4.2.11　用来实现图像效果的工具函数和预定义结构体　117
+4.2.12　计算屏幕坐标的工具函数　118
+4.2.13　与阴影处理相关的工具函数　121
+4.2.14　与雾效果相关的工具函数和宏　123
+第5章　Unity 3D引擎的多例化技术　128
+5.1　多例化技术概述　128
+5.1.1　不使用GPU多例化技术绘制多个相同模型的伪代码　128
+5.1.2　在Direct3D 11中设置输入组装阶段的示例伪代码　128
+5.1.3　设置顶点输入组装布局　129
+5.1.4　顶点着色器和片元着色器中对使用GPU多例化技术的对应设置　129
+5.2　如何在材质中启用多例化技术　130
+5.3　添加逐实例数据　131
+5.3.1　在外观着色器中给材质颜色变量增加GPU多例化支持的代码　131
+5.3.2　在C#层改变game object中的多例化材质颜色属性　132
+5.4　在顶点着色器和片元着色器中使用多例化技术　132
+5.4.1　在顶点着色器和片元着色器中启用GPU多例化技术　132
+5.4.2　UNITY_VERTEX_INPUT_INSTANCE_ID宏的定义　133
+5.4.3　DEFAULT_UNITY_VERTEX_INPUT_INSTANCE_ID宏的定义　133
+5.4.4　UNITY_INSTANCING_BUFFER_START及另外两个配套的宏的定义　134
+5.4.5　UNITY_INSTANCED_ARRAY_SIZE宏的定义　135
+5.4.6　UNITY_SETUP_INSTANCE_ID宏的定义　135
+5.4.7　DEFAULT_UNITY_SETUP_INSTANCE_ID和UNITY_TRANSFER_INSTANCE_ID宏的定义　135
+5.4.8　着色器常量缓冲区UnityDrawCallInfo的定义　136
+5.4.9　5.4.1节中展开多例化相关的宏之后的代码　137
+第6章　前向渲染和延迟渲染　139
+6.1　前向渲染概述　139
+6.2　延迟渲染概述　139
+6.3　Unity 3D中的各种渲染途径　141
+6.3.1　Unity 3D的前向渲染途径细节　142
+6.3.2　Unity 3D的延迟渲染途径细节　144
+第7章　Unity 3D的全局光照和阴影　147
+7.1　全局照明和局部照明　147
+7.2　引擎提供的光源类型　149
+7.2.1　点光源　149
+7.2.2　聚光灯光源　150
+7.2.3　有向平行光源　150
+7.2.4　区域面光源　150
+7.2.5　cookie　151
+7.3　使用实时模式光源进行全局照明　151
+7.4　使用烘焙式光照贴图进行全局照明　152
+7.5　使用混合光照进行全局照明　153
+7.5.1　Baked Indirect照明模式　154
+7.5.2　Shadowmask照明模式　154
+7.5.3　Subtractive照明模式　155
+7.6　光探针照明的细节　156
+7.6.1　光探针照明概述　156
+7.6.2　在场景中布置光探针　157
+7.6.3　使用光探针　157
+7.6.4　光探针代理体　158
+7.6.5　反射用光探针　158
+7.7　探讨基于球谐函数的全局光照　160
+7.7.1　半球空间的光照方程　161
+7.7.2　蒙特卡洛积分估算法的定义　161
+7.7.3　球谐函数　163
+7.7.4　正交对偶基函数和球谐光照　166
+7.7.5　Unity 3D中的球谐光照　169
+7.8　引擎中的渲染阴影的功能　175
+7.8.1　在光源空间中确定产生阴影的区域　175
+7.8.2　在屏幕空间中确定产生阴影的区域　175
+7.8.3　如何启用阴影　175
+7.8.4　透视走样和层叠式阴影贴图　177
+第8章　UnityShadowLibrary.cginc 文件分析　179
+8.1　阴影与全局照明系统的关系　179
+8.2　聚光灯光源生成的阴影　179
+8.2.1　启用SPOT宏　179
+8.2.2　UNITY_DECLARE_SHADOWMAP宏的定义　180
+8.2.3　SAMPLE_DEPTH_TEXTURE及类似的宏　181
+8.2.4　UnitySampleShadowmap函数版本1　182
+8.2.5　UnitySampleShadowmap函数版本2　183
+8.3　点光源生成的阴影　183
+8.3.1　从立方体纹理贴图中取得纹素对应的深度值　183
+8.3.2　对采样值进行混合计算　184
+8.4　预烘焙的阴影　185
+8.4.1　LPPV_SampleProbeOcclusion函数　185
+8.4.2　UnitySampleBakedOcclusion函数版本1　186
+8.4.3　UNITY_SAMPLE_TEX2D_SAMPLER宏的定义　186
+8.4.4　UnitySampleBakedOcclusion函数版本2　187
+8.4.5　UnityGetRawBakedOcclusions函数　187
+8.4.6　UnityMixRealtimeAndBakedShadows函数　188
+8.5　阴影的淡化处理　188
+8.5.1　UnityComputeShadowFadeDistance函数和UnityCompute
+ShadowFade函数　188
+8.5.2　梯度计算　189
+8.6　计算深度阴影的偏移值　190
+8.6.1　UnityGetReceiverPlaneDepthBias函数　192
+8.6.2　UnityCombineShadowcoordComponents函数　192
+8.7　PCF阴影过滤的相关函数　193
+8.7.1　UnitySampleShadowmap_PCF3x3NoHardwareSupport函数　194
+8.7.2　用于进行PCF过滤的辅助函数　195
+8.7.3　执行PCF过滤操作的函数　199
+8.7.4　基于3×3内核高斯模糊的PCF过滤操作　200
+第9章　AutoLight.cginc文件分析　203
+9.1　DIRECTIONAL宏的定义　203
+9.2　有向平行光产生的基于屏幕空间的阴影的相关函数　203
+9.2.1　启用UNITY_NO_SCREENSPACE_SHADOWS宏时TRANSFER_SHADOW宏的定义　203
+9.2.2　启用UNITY_NO_SCREENSPACE_SHADOWS宏时的unitySampleShadow函数　204
+9.2.3　未启用UNITY_NO_SCREENSPACE_SHADOWS宏时TRANSFER_SHADOW宏的定义　204
+9.2.4　UNITY_SAMPLE_SCREEN_SHADOW宏和UNITY_DECLARE_SCREENSPACE_　SHADOWMAP宏的定义　205
+9.3　Unity 3D 5.6版本后的阴影和光照计算工具函数　205
+9.3.1　UnityComputeForwardShadows函数　205
+9.3.2　不同编译条件下的UNITY_SHADOW_COORDS、UNITY_TRANSFER_SHADOW和UNITY_SHADOW_ATTENUATION宏的定义　206
+9.3.3　计算点光源的光亮度衰减的宏　209
+9.3.4　计算聚光灯光源的光亮度衰减的宏　209
+9.3.5　计算有向平行光源的光亮度衰减的宏　211
+9.3.6　计算带cookie的点光源的光亮度衰减的宏　211
+9.3.7　计算带cookie的有向平行光源的光亮度衰减的宏　212
+第 10章　基于物理的光照模型　213
+10.1　漫反射和Lambert光照模型　213
+10.2　镜面反射和Phong光照模型　214
+10.3　Blinn-Phong光照模型　215
+10.4　基于物理的光照模型的相关概念　216
+10.4.1　光的折射和折射率　216
+10.4.2　均匀介质　217
+10.4.3　散射　217
+10.4.4　双向反射分布函数　218
+10.4.5　菲涅尔反射　220
+10.4.6　微表面和Cook-Torrance模型　223
+10.4.7　定义菲涅尔方程　225
+10.4.8　Cook-Torrance BRDF模型　226
+第 11章　Unity 3D标准着色器和　Standard.shader文件分析　227
+11.1　标准着色器中的各项材质属性　227
+11.1.1　Rendering Mode属性　227
+11.1.2　Albedo属性　228
+11.1.3　Metal属性　228
+11.1.4　Smoothness属性　229
+11.1.5　Normal Map属性　230
+11.1.6　Height Map属性　230
+11.1.7　Occlusion属性　234
+11.1.8　Emission属性　235
+11.1.9　Secondary Map属性　235
+11.1.10　Detail Mask属性　236
+11.2　Standard.shader中的属性变量　236
+11.2.1　Standard.shader代码段中的属性变量　236
+11.2.2　Standard.shader代码段中的MetallicSetup函数　237
+11.3　第 一个SubShader的前向通路　238
+11.3.1　前向通路的简化版顶点着色器入口函数　239
+11.3.2　前向通路的简化版片元着色器入口函数　247
+11.3.3　前向通路的简化版着色器流程　254
+11.3.4　前向通路的标准版顶点着色器入口函数　255
+11.3.5　前向通路的标准版片元着色器入口函数　258
+11.3.6　前向通路的标准版着色器流程　263
+11.4　第 一个SubShader的FORWARD_DELTA通路　263
+11.4.1　FORWARD_DELTA通路的简化版顶点着色器入口函数　263
+11.4.2　FORWARD_DELTA通路的简化版片元着色器入口函数　265
+11.4.3　FORWARD_DELTA通路的简化版着色器流程　267
+11.4.4　FORWARD_DELTA通路的标准版顶点着色器入口函数　268
+11.4.5　FORWARD_DELTA通路的标准版片元着色器入口函数　270
+11.4.6　FORWARD_DELTA通路的标准版着色器流程　271
+11.5　第 一个SubShader的ShadowCaster通路　272
+11.5.1　ShadowCaster通路的编译指示符以及着色器变量和宏　273
+11.5.2　ShadowCaster通路的顶点着色器入口函数　275
+11.5.3　ShadowCaster通路的片元着色器入口函数　278
+11.6　第 一个SubShader的延迟通路　281
+11.6.1　延迟通路的顶点着色器入口函数　281
+11.6.2　延迟通路的片元着色器入口函数　282
+11.7　第 一个SubShader的元渲染通路　284
+11.7.1　元渲染通路的顶点着色器入口函数　284
+11.7.2　元渲染通路的片元着色器入口函数　285
+11.8　UnityStandardInput.cginc的结构体、着色器变量、宏和函数　286
+11.8.1　文件中预定义的宏　286
+11.8.2　VertexInput结构体　287
+11.8.3　TexCoords函数　287
+11.8.4　DetailMask函数　288
+11.8.5　Albedo函数　288
+11.8.6　Alpha函数　289
+11.8.7　Occlusion函数　289
+11.8.8　MetallicGloss函数　289
+11.8.9　Emission函数　290
+11.8.10　NormalInTangentSpace函数　290
+11.8.11　Parallax函数　291
+11.9　UnityStandardUtils.cginc的结构体、着色器变量、宏和函数　292
+11.9.1　PreMultiplyAlpha函数　292
+11.9.2　OneMinusReflectivityFrom Metallic函数　292
+11.9.3　DiffuseAndSpecularFrom Metallic函数　293
+11.9.4　LerpWhiteTo函数　293
+11.9.5　LerpOneTo函数　293
+11.9.6　ParallaxOffset1Step函数　294
+11.9.7　UnpackScaleNormalRGorAG函数　294
+11.9.8　UnpackScaleNormal函数　295
+11.9.9　BlendNormals函数　295
+11.9.10　CreateTangentToWorldPer Vertex函数　295
+11.9.11　ShadeSHPerVertex函数　295
+11.9.12　ShadeSHPerPixel函数　296
+11.9.13　BoxProjectedCubemap Direction函数　296
+11.10　UnityImageBasedLighting.cginc的结构体、着色器变量、宏和函数　299
+11.10.1　Unity_GlossyEnvironmentData结构体　299
+11.10.2　UnityGlossyEnvironmentSetup　函数　300
+11.10.3　Unity_GlossyEnvironment函数　300
+11.10.4　perceptualRoughnessTo MipmapLevel函数　301
+11.11　UnityGlobalIllumination.cginc的结构体、着色器变量、宏和函数　301
+11.11.1　ResetUnityLight函数　301
+11.11.2　SubtractMainLightWithReal timeAttenuationFromLightmap函数　302
+11.11.3　UnityGI_Base函数　302
+11.11.4　UnityGI_IndirectSpecular函数　304
+11.11.5　UnityGlobalIllumination函数版本1　305
+11.11.6　UnityGlobalIllumination函数版本2　305
+11.12　UnityStandardBRDF.cginc的结构体、着色器变量、宏和函数　305
+11.12.1　PerceptualRoughnessTo Roughness函数　306
+11.12.2　RoughnessToPerceptual Roughness函数　306
+11.12.3　SmoothnessToRoughness函数　306
+11.12.4　SmoothnessToPerceptual Roughness函数　306
+11.12.5　Pow4函数的4个不同版本　307
+11.12.6　Pow5函数的4个不同版本　307
+11.12.7　FresnelTerm函数　307
+11.12.8　FresnelLerp函数　308
+11.12.9　FresnelLerpFast函数　308
+11.12.10　DisneyDiffuse函数　308
+11.12.11　SmithJointGGXVisibilityTerm函数　309
+11.12.12　GGXTerm函数　309
+11.12.13　BRDF3_Indirect函数　310
+11.12.14　BRDF3_Direct函数　310
+11.12.15　BRDF3_Unity_PBS函数　311
+11.12.16　BRDF2_Unity_PBS函数　311
+11.12.17　BRDF1_Unity_PBS函数　313
+11.13　UnityGBuffer.cginc的结构体、着色器变量、宏和函数　314
+11.13.1　UnityStandardData结构体　314
+11.13.2　UnityStandardDataToGbuffer函数　315
+11.14　UnityMetaPass.cginc的结构体、着色器变量、宏和函数　315
+11.14.1　UnityMetaPass常量缓冲区　315
+11.14.2　UnityMetaInput结构体　315
+11.14.3　UnityMetaVertexPosition函数　316
+11.14.4　UnityMetaFragment函数　316
+第 12章　实战—在片元着色器用算法实时绘制图像　318
+12.1　搭建绘图环境　319
+12.2　设计绘制场景的着色器　320
+12.2.1　顶点着色器所需的数据结构和实现　320
+12.2.2　判断某点是否在三角形内　321
+12.2.3　基于距离场判定片元的颜色　322
+12.2.4　定义五角星几何体数据　326
+12.2.5　判断某点是否在圆及矩形内　328
+12.2.6　定义和绘制场景中的几何体　331
+
+

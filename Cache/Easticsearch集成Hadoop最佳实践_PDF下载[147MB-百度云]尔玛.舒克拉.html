@@ -1,0 +1,296 @@
+Easticsearch集成Hadoop最佳实践 PDF下载 尔玛.舒克拉 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730246967
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#730246967
+<p>书名:Easticsearch集成Hadoop最佳实践</p><p>作者:尔玛.舒克拉</p><p>页数:未知</p><p>定价:¥55.0</p><p>出版社:清华大学出版社</p><p>出版日期:2017-06-01</p><p>ISBN:9787302469674</p><p><h2>本书特色</h2></p>[<p>
+ElasticSearch是一个开源的分布式搜索引擎，具有高可靠性，支持非常多的企业级搜索用例。Elasticsearch Hadoop作为一个完美的工具，用来连接 Elasticsearch 和 Hadoop 的生态系统。通过Kibana技术，Elasticsearch Hadoop很容易从Hadoop 生态系统中获得大数据分析的结果。
+本书全面介绍Elasticsearch Hadoop技术用于大数据分析以及数据可视化的方法。内容共分7章，包括Hadoop、Elasticsearch、 Marvel和 Kibana 安装；通过编写 MapReduce 作业，把Hadoop数据导入 Elasticsearch；全面分析 Elasticsearch本质，如全文本搜索分析、 查询、 筛选器和聚合；使用 Kibana创建各种可视化和交互式仪表板，并使用Storm和 Elasticsearch分类现实世界的流数据以及相关的其他主题。
+本书适合从事大数据分析人员、大数据应用开发的人员参考，也适合高等院校及培训机构相关专业的师生教学参考。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>Hadoop已经是业界公认的大数据处理的事实标准，对海量数据的存储与处理都是不在话下，不过，随着业务的复杂化以及需求的多变，分析师们迫切地想要看到结果从而进行分析，而目前Hadoop离线 批量处理的方式稍微有点力不从心，有没有一种能够更灵活地使用和加工数据的方法呢？鉴于此，Elasticsearch脱颖而出，Elasticsearch可以很方便地对海量数据进行搜索与聚合，并且能够实时响应，用户无需为每次不同的查询而重新定义Schema或者预处理。
+数据科学家可以非常灵活地对数据进行各种维度的钻取与分析，把更多的精力关注在业务本身和挖掘数据本身的价值，并且可以随时根据上一个查询得到的线索随时去构建新的查询从而继续挖掘，这在以前是不敢想象的。另外，Elasticsearch还能和Hadoop进行结合，Hadoop 适合海量数据的归档与离线预处理，Elasticsearch则进行实时检索与分析，而本书是目前介绍这两方面结合使用的非常好的中文资料，相信对您一定会大有裨益。
+<br/>
+Medcl
+Elastic中文社区发起人
+Elastic工程师与布道师
+ 
+<br/>
+Elasticsearch是近年来大数据领域异军突起的一门热点技术。如何将Elasticsearch与Hadoop 体系相结合，是很多人关心和疑惑的问题。Elasticsearch for Hadoop方案很好的解决了这个问题，但是长期缺乏相关资料。本书全面的介绍了方案的原理、部署、样例和配置细节，相信可以帮助到读者。
+饶琛琳
+《ELKstack权威指南》作者
+ 日志易产品总监
+<br/> </p>]<p><h2>作者简介</h2></p>[<p>贾传青，数据架构师，Oracle OCM，DB2迁移之星，TechTarget特约作家，从数据库向大数据转型的先行者，酷爱摄影。曾服务于中国联通、中国电信、建设银行、PICC等，目前供职于一家大数据解决方案提供商，致力于大数据技术的应用与实践。著有《开源大数据分析引擎Impala实战》一书。
+<br/></p>]<p><h2>目录</h2></p>
+    目录
+第1章  环境部署 1
+1.1  安装部署Hadoop集群 1
+Java安装和配置 2
+用户添加和配置 2
+SSH认证配置 3
+Hadoop下载 4
+环境变量配置 4
+Hadoop配置 5
+配置core-site.xml 6
+配置hdfs-site.xml 6
+配置yarn-site.xml 6
+配置mapred-site.xml 7
+格式化HDFS 7
+启动Hadoop进程 8
+1.2  安装Elasticsearch及相关插件 8
+下载Elasticsearch 9
+配置Elasticsearch 9
+安装Head插件 11
+安装Marvel插件 11
+启动Elasticsearch 12
+1.3  运行WordCount示例 13
+下载编译示例程序 13
+将示例文件上传到HDFS 13
+运行**个作业 14
+1.4  使用Head 和 Marvel浏览数据 16
+使用Head浏览数据 16
+初识Marvel 18
+使用Sense浏览数据 19
+小结 21
+第2章  初识ES-Hadoop 22
+2.1  理解WordCount程序 23
+理解Mapper 23
+理解Reducer 24
+理解Driver 25
+使用旧的API——org.apache.hadoop.mapred 28
+2.2  实际案例——网络数据监控 28
+获取并理解数据 28
+明确问题 29
+解决方案 30
+解决方案1——预聚合结果 30
+解决方案2——直接查询聚合结果 32
+2.3  开发MapReduce作业 33
+编写Mapper类 34
+编写Driver 37
+编译作业 38
+上传数据到HDFS 41
+运行作业 41
+查看TOP N结果 42
+2.4  将数据从Elasticsearch写回HDFS 44
+了解Twitter数据集 44
+导入Elasticsearch 45
+创建MapReduce作业 46
+编写Tweets2HdfsMapper 46
+运行示例 50
+确认输出 50
+小结 52
+第3章  深入理解Elasticsearch 53
+3.1  理解搜索 53
+观念转换 54
+索引 54
+类型 55
+文档 55
+字段 55
+3.2  与Elasticsearch交互 56
+Elasticsearch的CRUD 56
+创建文档 56
+获取文档 57
+更新文档 58
+删除文档 58
+创建索引 58
+映射 59
+数据类型 60
+创建映射 61
+索引模板 62
+3.3  控制索引过程 63
+什么是反转索引 63
+输入数据分析 64
+停止词 64
+大小写 65
+词根 65
+同义词 65
+分析器 65
+3.4  Elastic查询 67
+编写查询语句 68
+URI查询 68
+match_all查询 68
+term查询 68
+boolean查询 70
+match查询 71
+range查询 72
+wildcard查询 73
+过滤器 73
+3.5  聚合查询 75
+执行聚合查询 76
+terms聚合 76
+histogram聚合 78
+range聚合 78
+geo distance聚合 79
+嵌套聚合 81
+自测题 82
+小结 82
+第4章  利用Kibana进行大数据可视化 83
+4.1  安装部署 83
+Kibana安装 84
+准备数据 84
+自测题 85
+启动Kibana 86
+4.2  数据发现 87
+4.3  数据可视化 90
+饼图 91
+堆积柱状图 94
+使用堆积柱状图完成日期直方图 96
+面积图 97
+饼图组图 98
+环形图 98
+瓦片地图 99
+自测题 100
+4.4  动态图表 101
+小结 104
+第5章  实时分析 105
+5.1  了解Twitter趋势分析器 105
+实现目标 106
+Apache Storm安装 107
+5.2  将流式数据接入Storm 107
+编写Storm spout 108
+编写Storm bolt 110
+创建Storm topology 112
+编译运行Storm作业 113
+5.3  趋势分析 114
+significant term聚合 114
+使用Kibana分析趋势 116
+5.4  使用Percolator对推文分类 117
+Percolator 118
+Percolator优化 120
+推文分类 121
+小结 124
+第6章  ES-Hadoop配置 125
+6.1  分布式环境中的Elasticsearch 125
+集群和节点 126
+节点类型 126
+节点发现 128
+数据分布 129
+分片 129
+副本 129
+分片分配 130
+6.2  ES-Hadoop架构 132
+动态并行 132
+写入Elasticsearch 133
+从Elasticsearch中读取 134
+失败捕获 134
+数据本地化 135
+6.3  生产环境配置 135
+硬件 135
+内存 135
+CPU 135
+磁盘 136
+网络 136
+集群安装 137
+集群拓扑结构 137
+设置名称 138
+设置路径 138
+设置内存 139
+脑裂问题 140
+设置恢复参数 141
+预设配置 142
+数据导入 142
+全文检索 144
+快速聚合 144
+生产环境部署检查列表 145
+6.4  集群管理 146
+监控集群健康 146
+备份和恢复 149
+数据备份 149
+数据恢复 150
+小结 151
+第7章  与Hadoop生态系统集成 152
+7.1  与Pig集成 152
+Pig安装 154
+向Elasticsearch中导入数据 155
+从JSON源写数据 157
+类型转换 157
+从Elasticsearch中读取数据 158
+7.2  与Hive集成 158
+安装Apache Hive 158
+向Elasticsearch中导入数据 159
+从JSON源写数据 161
+类型转换 161
+从Elasticsearch中读取数据 162
+7.3  与Cascading集成 163
+向Elasticsearch中导入数据 163
+编写一个Cascading作业 163
+运行作业 164
+从Elasticsearch中读取数据 165
+编写一个reader作业 165
+使用Lingual 165
+7.4  与Spark集成 167
+安装Spark 168
+向Elasticsearch中导入数据 168
+使用SparkSQL向Elasticsearch中导入数据 169
+从Elasticsearch中读取数据 170
+使用SparkSQL从Elasticsearch中读取数据 170
+7.5  与YARN集成 171
+小结 172
+附录  配置 174
+基本配置 174
+es.resource 174
+es.resource.read 174
+es.resource.write 175
+es.nodes 175
+es.port 175
+读写配置 175
+es.query 175
+es.input.json 176
+es.write.operation 177
+es.update.script 177
+es.update.script.lang 177
+es.update.script.params 177
+es.update.script.params.json 178
+es.batch.size.bytes 178
+es.batch.size.entries 178
+es.batch.write.refresh 178
+es.batch.write.retry.count 178
+es.batch.write.retry.wait 179
+es.ser.reader.value.class 179
+es.ser.writer.value.class 179
+es.update.retry.on.conflict 179
+映射配置 179
+es.mapping.id 179
+es.mapping.parent 180
+es.mapping.version 180
+es.mapping.version.type 180
+es.mapping.routing 180
+es.mapping.ttl 180
+es.mapping.timestamp 181
+es.mapping.date.rich 181
+es.mapping.include 181
+es.mapping.exclude 181
+索引配置 181
+es.index.auto.create 181
+es.index.read.missing.as.empty 182
+es.field.read.empty.as.null 182
+es.field.read.validate.presence 182
+网络配置 182
+es.nodes.discovery 182
+es.nodes.client.only 183
+es.http.timeout 183
+es.http.retries 183
+es.scroll.keepalive 183
+es.scroll.size 183
+es.action.heart.beat.lead 183
+认证配置 184
+es.net.http.auth.user 184
+es.net.http.auth.pass 184
+SSL配置 184
+es.net.ssl 184
+es.net.ssl.keystore.location 184
+es.net.ssl.keystore.pass 184
+es.net.ssl.keystore.type 184
+es.net.ssl.truststore.location 184
+es.net.ssl.truststore.pass 185
+es.net.ssl.cert.allow.self.signed 185
+es.net.ssl.protocol 185
+es.scroll.size 185
+代理配置 185
+es.net.proxy.http.host 185
+es.net.proxy.http.port 185
+es.net.proxy.http.user 185
+es.net.proxy.http.pass 186
+es.net.proxy.http.use.system.props 186
+es.net.proxy.socks.host 186
+es.net.proxy.socks.port 186
+es.net.proxy.socks.user 186
+es.net.proxy.socks.pass 186
+es.net.proxy.socks.use.system.props 186

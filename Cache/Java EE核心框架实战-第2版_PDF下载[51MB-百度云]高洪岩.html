@@ -1,0 +1,525 @@
+Java EE核心框架实战-第2版 PDF下载 高洪岩 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711546361
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711546361
+<p>书名:Java EE核心框架实战-第2版</p><p>作者:高洪岩</p><p>页数:518</p><p>定价:¥99.0</p><p>出版社:人民邮电出版社</p><p>出版日期:2017-09-01</p><p>ISBN:9787115463616</p><p><h2>本书特色</h2></p>[<p>
+《Java EE核心框架实战（第2版）》的宗旨是提高读者学习Java EE的效率，增强其项目实战能力。为此，本书摒弃了软件公司中不常用或不实用的技术，而是采用近200个开发案例，为读者讲解了开发商业软件的知识，帮助读者进行“精要”式的学习，汲取Java EE的思想，正确地进行项目实战。
+《Java EE核心框架实战（第2版）》涵盖了MyBatis 3、Struts 2、Ajax、JSON、jQuery、Spring 4 MVC、Hibernate 5、Spring 4等主流Java EE框架的核心开发技术，介绍了MVC框架的原理实现、上传、下载、数据验证、国际化、多模块分组开发、转发/重定向、JSON的解析；将Ajax及JSON和MVC框架进行整合开发；ORM框架的CURD操作以及MyBatis和Hibernate中的映射文件使用。本书还使用大量篇幅介绍了Spring 4中的核心技术DI与AOP，以及企业中常用框架的整合开发，框架包含Struts 2、Spring 4 MVC、MyBatis 3、Hibernate 5、Spring 4整合开发等内容。
+《Java EE核心框架实战（第2版）》语言简洁，示例丰富，可帮助读者迅速掌握使用主流开源Java EE框架进行开发所需的各种技能。本书适合具有一定Java编程基础的读者，以及使用Java进行软件开发、测试的从业人员阅读。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>本书宗旨
+提高读者学习Java EE的效率，增强其项目实战能力。本书摒弃了软件公司中不常用或不实用的技术，而是采用近200个开发案例，为读者讲解了开发商业软件的知识，帮助读者进行“精要”式的学习，汲取Java EE的思想，正确地进行项目实战。
+本书特色
+不留遗漏——覆盖主流Java EE轻量级框架
+直击要害——实战化案例精准定位开发细节
+学以致用——精要式项目确保开发/ 学习不脱节
+潜移默化——研磨式知识讲解参透技术要点
+提升效率——垂直式技术精解不绕弯路
+循序提升——渐进式知识点统排确保连贯
+以点概面——解决方案式项目，知识独立却又体系完整
+成功案例——全面经过项目过程锤炼，提升学习/ 开发效率 </p>]<p><h2>作者简介</h2></p>[<p>高洪岩，毕业于东北电力大学计算机科学与技术专业，获得软件工程硕士学位。曾任职
+于大连东软软件公司、北京中软、中国海洋石油集团、中国石化，现工作于教育与技术
+之间，喜欢分享，快乐学习。</p>]<p><h2>目录</h2></p>
+    第1章  MyBatis 3操作数据库　1
+1.1　MyBatis介绍　1
+1.2　MyBatis基本使用　4
+1.2.1　使用XML配置文件创建SqlSessionFactory对象　5
+1.2.2　SqlSessionFactoryBuilder和SqlSessionFactory类信息　7
+1.2.3　使用MyBatis Generator工具逆向操作Oracle数据库　7
+1.2.4　使用MyBatis Generator工具逆向操作MySQL数据库　14
+1.3　使用MyBatis实现CURD-2种数据库（Oracle-MySQL）　16
+1.3.1　针对Oracle的CURD　17
+1.3.2　针对MySQL的CURD　23
+1.3.3　SQL映射文件中namespace命名空间的作用　24
+1.4　MyBatis核心对象的生命周期与封装　26
+1.4.1　创建GetSqlSessionFactory.java类　27
+1.4.2　创建GetSqlSession.java类　28
+1.4.3　创建DBOperate.java类　29
+1.4.4　创建userinfoMapping.xml映射文件　29
+1.4.5　创建连接数据库mybatis-config.xml配置文件　30
+1.4.6　创建名称为test的Servlet对象　30
+1.4.7　添加记录及异常回滚的测试　31
+1.4.8　删除记录　33
+1.4.9　更改记录　34
+1.4.10　查询单条记录　35
+1.4.11　查询多条记录　36
+第2章  MyBatis 3**开发技能　37
+2.1　使用getMapper()面向接口编程　37
+2.1.1　接口-SQL映射的对应关系　37
+2.1.2　创建Userinfo.java实体类　38
+2.1.3　创建UserinfoMapper.java接口　38
+2.1.4　创建SQL映射文件UserinfoMapper.xml　39
+2.1.5　增加记录insert的操作代码　39
+2.1.6　查询全部selectAll的操作代码　41
+2.1.7　查询单条记录selectById的操作代码　41
+2.1.8　修改记录updateById的操作代码　42
+2.1.9　删除记录deleteById的操作代码　43
+2.2　使用typeAliases配置别名　43
+2.2.1　使用typeAlias单独配置别名　44
+2.2.2　使用package批量配置别名　44
+2.3　使用properties文件保存数据库信息　46
+2.3.1　在mybatis-config.xml配置文件中读取properties文件中的参数　46
+2.3.2　将数据库信息封装进properties属性文件中　47
+2.4　与数据源DataSource有关的操作　49
+2.4.1　配置多个environment环境　49
+2.4.2　什么是JNDI以及如何从JNDI获得数据源DataSource　50
+2.4.3　如何在MyBatis中使用数据源DataSource　54
+2.4.4　在MyBatis中使用HikariCP连接池　57
+2.5　多数据库执行不同SQL语句的支持　60
+2.6　多种获取Mapper的方式　61
+2.7　MyBatis3的SQL映射文件与动态SQL　62
+2.7.1　标签　62
+2.7.2　标签　64
+2.7.3　使用${}拼接SQL语句　65
+2.7.4　插入null值时的处理第1种方法jdbcType　67
+2.7.5　插入null值时的处理第2种方法　68
+2.7.6　标签　69
+2.7.7　标签的使用　71
+2.7.8　标签的使用　72
+2.7.9　标签的使用　73
+2.7.10　使用标签对like语句进行适配　77
+2.8　插入超大的字符串String文本内容　81
+2.9　对查询的数据进行分页　84
+2.10　批处理SQL语句　86
+第3章  Struts 2**开发技能　88
+3.1　使用Struts 2进行登录功能的开发　88
+3.1.1　为什么要使用MVC　89
+3.1.2　准备jar文件　94
+3.1.3　创建Web项目、添加jar文件及配置web.xml文件　96
+3.1.4　创建控制层Controller文件-Login.java　96
+3.1.5　创建业务逻辑层Model文件-UserinfoService.java　97
+3.1.6　创建视图层View文件-login.jsp　98
+3.1.7　添加核心配置文件struts.xml及解释　98
+3.1.8　添加ok.jsp和no.jsp登录结果文件　99
+3.1.9　运行项目　99
+3.1.10　Struts 2的拦截器　101
+3.1.11　Struts 2的数据类型自动转换　106
+3.2　MVC框架的开发模型　112
+3.2.1　基础知识准备1——XML文件的CURD　113
+3.2.2　基础知识准备2——Java的反射　120
+3.2.3　实现MVC模型——自定义配置文件　122
+3.2.4　实现MVC模型——ActionMapping.java封装信息　123
+3.2.5　实现MVC模型——ResultMapping.java封装信息　124
+3.2.6　实现MVC模型——管理映射信息的ActionMappingManager.java对象　124
+3.2.7　实现MVC模型——创建反射Action的ActionManager.java对象　126
+3.2.8　实现MVC模型——创建核心控制器ActionServlet.java　127
+3.2.9　实现MVC模型——创建Action接口及控制层Controller实现类　129
+3.2.10　实现MVC模型——创建视图层V对应的JSP文件　130
+3.2.11　实现MVC模型——在web.xml中配置核心控制器　131
+3.2.12　实现MVC模型——运行效果　131
+3.3　Struts 2的刷新验证功能　131
+3.3.1　Action接口　132
+3.3.2　Validateable和ValidationAware接口　133
+3.3.3　TextProvider和LocaleProvider接口　134
+3.3.4　使用ActionSupport实现有刷新的验证　134
+3.4　对Struts 2有刷新验证的示例进行升级　137
+3.4.1　加入xml配置来屏蔽自动生成的table/tr/td代码　137
+3.4.2　解决“出错信息不能自动显示”的问题　139
+3.5　用标签显示全部出错信息　142
+3.6　出错信息进行传参及国际化　144
+3.6.1　创建info_en_US.properties和info_zh_CN.properties属性文件　144
+3.6.2　在JSP文件中显示国际化的静态文本　147
+3.6.3　在JSP文件中显示国际化的静态文本时传递参数　149
+3.6.4　在Action中使用国际化功能　149
+3.7　用实体类封装URL中的参数——登录功能的URL封装　151
+3.8　Struts 2中的转发操作　153
+3.8.1　Servlet中的转发操作　153
+3.8.2　Struts 2中的转发操作　154
+3.9　由Action重定向到Action——无参数　157
+3.9.1　什么样的情况下使用重定向　157
+3.9.2　新建起始控制层Login.java　157
+3.9.3　新建目的控制层List.java　157
+3.9.4　在struts.xml文件中配置重定向的重点　158
+3.9.5　新建显示列表的JSP文件　159
+3.10　由Action重定向到Action——有参数　159
+3.10.1　什么样的情况下需要重定向传递参数　159
+3.10.2　新建起始控制层Login.java文件　159
+3.10.3　更改struts.xml配置文件　160
+3.10.4　新建目的控制层List.java文件　161
+3.10.5　用JSTL和EL在JSP文件中打印数据　162
+3.11　让Struts 2支持多模块多配置文件开发　164
+3.11.1　新建4个模块的控制层　164
+3.11.2　新建3个模块的配置文件　165
+3.11.3　使用include标记导入多个配置文件　167
+3.11.4　创建各模块使用的JSP文件　167
+3.11.5　运行各模块的效果　168
+3.12　在Action中有多个业务方法时的处理　169
+3.13　自定义全局result　171
+3.13.1　新建全局result实例和控制层代码　171
+3.13.2　声明全局的result对象　172
+3.13.3　部属项目并运行　172
+3.14　在Action中使用servlet的API（紧耦版）　173
+3.14.1　将数据放到不同的作用域中　173
+3.14.2　从不同作用域中取值　174
+3.15　在Action中使用Servlet的API（松耦版）　175
+3.15.1　新建控制层　175
+3.15.2　新建JSP视图　176
+第4章  Struts 2文件的上传与下载　178
+4.1　使用Struts 2进行单文件上传　178
+4.1.1　Struts 2上传功能的底层依赖　178
+4.1.2　新建上传文件的JSP文件　178
+4.1.3　新建上传文件的控制层Register.java文件　179
+4.1.4　Action中File实例的命名规则　180
+4.1.5　设置上传文件的大小　180
+4.1.6　设计struts.xml配置文件　180
+4.1.7　成功上传单个文件　181
+4.2　使用Struts 2进行多文件上传　181
+4.2.1　新建上传多个文件的JSP　182
+4.2.2　设计上传的控制层代码　182
+4.2.3　成功上传多个文件　184
+4.3　使用属性驱动形式的文件上传　185
+4.3.1　创建上传多个文件的JSP　185
+4.3.2　设计上传文件的控制层　186
+4.3.3　新建上传文件的封装类　187
+4.3.4　将JSP文件中s:file标签的name属性进行更改　188
+4.3.5　以属性驱动方式成功上传多个文件　189
+4.4　用Struts 2实现下载文件的功能（支持中文文件名与IE和FireFix兼容）　190
+4.4.1　新建下载文件的JSP文件　190
+4.4.2　新建下载文件的控制层文件　191
+4.4.3　更改struts.xml配置文件　192
+4.4.4　成功下载中文文件名的文件　192
+第5章  JSON、Ajax和jQuery与Struts 2联合使用　193
+5.1　JSON介绍　193
+5.2　用JSON创建对象　194
+5.2.1　JSON创建对象的语法格式　194
+5.2.2　在JSP中用JSON创建一个对象　194
+5.2.3　运行效果　194
+5.3　用JSON创建字符串的限制　195
+5.3.1　需要转义的特殊字符　195
+5.3.2　在JSP中对JSON特殊字符进行转义　195
+5.3.3　运行效果　196
+5.4　用JSON创建数字类型语法格式　196
+5.4.1　在JSP中用JSON创建数字类型　196
+5.4.2　运行效果　197
+5.5　用JSON创建数组对象的语法格式　197
+5.5.1　JSON创建一个数组对象　198
+5.5.2　运行效果　198
+5.6　用JSON创建嵌套的对象类型　198
+5.7　将对象转成JSON字符串　200
+5.7.1　什么情况下需要将对象转成JSON字符串　200
+5.7.2　使用stringify方法将对象转成JSON字符串　200
+5.8　将对象转成JSON字符串提交到Action并解析（以post方式提交）　201
+5.8.1　在JSP中创建JSON和Ajax对象　201
+5.8.2　用Action控制层接收通过Ajax传递过来的JSON字符串　202
+5.8.3　运行效果　203
+5.8.4　在控制台输出的数据　204
+5.9　将对象转成JSON字符串提交到Action并解析(get方式提交)　204
+5.9.1　新建创建JSON字符串的JSP文件　204
+5.9.2　新建接收JSON字符串的Action控制层　205
+5.9.3　运行结果　206
+5.9.4　在控制台输出的数据　206
+5.10　将数组转成JSON字符串提交到Action并解析(get和post方式提交)　207
+5.10.1　在服务器端用get方法解析JSON字符串　208
+5.10.2　在服务器端用post方法解析JSON字符串　209
+5.10.3　运行结果　210
+5.10.4　在控制台输出的数据　210
+5.11　使用Ajax调用Action并生成JSON再传递到客户端(get和post方式提交)　210
+5.11.1　新建具有Ajax提交功能的JSP　211
+5.11.2　在Action控制层创建List中存String　213
+5.11.3　在Action控制层创建List中存Bean　214
+5.11.4　在Action控制层创建Map中存放的String　215
+5.11.5　在Action控制层创建Map中存放的Bean　216
+5.11.6　单击不同的button按钮调用不同的Action　217
+5.12　jQuery、JSON和Struts 2　218
+5.12.1　jQuery框架的Ajax功能介绍　218
+5.12.2　用jQuery的Ajax功能调用远程action（无返回结果）　219
+5.12.3　jQuery的Ajax方法结构　220
+5.12.4　用jQuery的Ajax功能调用远程action（有返回结果）　221
+5.12.5　用jQuery的Ajax功能调用远程action并且传递JSON格式参数（有返回值）　223
+5.12.6　用jQuery解析从action返回List中存String的JSON字符串　226
+5.13　在服务器端解析复杂结构的JSON对象　228
+第6章  用Hibernate 5操作数据库　230
+6.1　Hibernate概述与优势　230
+6.2　持久层、持久化与ORM　231
+6.3　用MyEclipse开发**个Hibernate示例　233
+6.3.1　在MyEclipse中创建MyEclipse Database Explorer数据库连接　233
+6.3.2　创建Web项目并添加Hibernate框架　235
+6.3.3　开始Hibernate逆向　239
+6.3.4　数据访问层DAO与实体类entity的代码分析　241
+6.3.5　使用Hibernate进行持久化　242
+6.3.6　映射文件Userinfo.hbm.xml的代码分析　243
+6.3.7　查询—修改—删除的操作代码　245
+6.3.8　其他类解释　247
+第7章  Hibernate 5核心技能　248
+7.1　工厂类HibernateSessionFactory.java中的静态代码块　248
+7.2　SessionFactory介绍　249
+7.3　Session介绍　249
+7.4　使用Session实现CURD功能　250
+7.4.1　数据表userinfo结构与映射文件　250
+7.4.2　创建SessionFactory工厂类　251
+7.4.3　添加记录　251
+7.4.4　查询单条记录　252
+7.4.5　更改记录　253
+7.4.6　删除记录　253
+7.5　Hibernate使用JNDI技术　254
+7.5.1　备份Tomcat/conf路径下的配置文件　254
+7.5.2　更改配置文件context.xml　254
+7.5.3　更改配置文件web.xml　254
+7.5.4　添加Hibernate框架配置的关键步骤　255
+7.5.5　逆向工程　255
+7.5.6　支持JNDI的hibernate.cfg.xml配置文件内容　255
+7.5.7　创建查询数据的Servlet　256
+7.5.8　部属项目验证结果　256
+7.6　缓存与实体状态　256
+7.6.1　Hibernate的OID与缓存　256
+7.6.2　Hibernate中的对象状态：瞬时状态、持久化状态和游离状态　258
+7.7　双向一对多在MyEclipse中的实现　258
+7.7.1　添加主表记录　261
+7.7.2　添加子表记录　262
+7.7.3　更改主表数据　262
+7.7.4　更改子表数据　262
+7.7.5　删除子表数据　263
+7.7.6　删除主表main数据　263
+7.7.7　通过主表获取子表数据　264
+7.8　Hibernate备忘知识点　265
+7.9　对主从表结构中的HashSet进行排序　267
+7.10　延迟加载与load()和get()的区别　267
+7.10.1　主从表表结构的设计　267
+7.10.2　对省表和市表内容的添充　268
+7.10.3　更改映射文件　268
+7.10.4　新建测试用的Servlet对象　268
+7.10.5　更改映射文件Sheng.hbm.xml　269
+7.11　Hibernate对Oracle中CLOB字段类型的读处理　270
+7.12　Hibernate中的inverse与cascade的测试　270
+第8章  Hibernate 5使用HQL语言进行检索　275
+8.1　Hibernate的检索方式　275
+8.1.1　HQL表别名　276
+8.1.2　HQL对结果进行排序与list()和iterator()方法的区别　278
+8.1.3　HQL索引参数绑定　281
+8.1.4　HQL命名参数绑定与安全性　282
+8.1.5　HQL方法链的使用　284
+8.1.6　HQL中的uniqueResult方法的使用　284
+8.1.7　HQL中的where子句与查询条件　285
+8.1.8　查询日期——字符串格式　287
+8.1.9　查询日期——数字格式　288
+8.1.10　分页的处理　289
+8.1.11　HQL中的聚集函数：distinct-count-min-max-sum-avg　290
+8.1.12　HQL中的分组查询　292
+第9章  JPA核心技能　294
+9.1　什么是JPA以及为什么要使用JPA　294
+9.2　搭建JPA开发环境与逆向　295
+9.3　分析逆向出来的Java类　300
+9.4　使用IUserinfoDAO.java接口中的方法　301
+9.4.1　方法public void save(Userinfo entity)的使用　302
+9.4.2　方法public Userinfo findById(Long id)的使用　303
+9.4.3　方法public List findByProperty(String propertyName, final Object value, final int... rowStartIdxAndCount)的使用　304
+9.4.4　方法public List findByUsername(Object username, int... rowStartIdxAndCount)的使用　304
+9.4.5　方法public List findByPassword(Object password, int... rowStartIdxAndCount)的使用　304
+9.4.6　方法public List findByAge(Object age, int... rowStartIdxAndCount)的使用　305
+9.4.7　方法public List findAll(final int... rowStartIdxAndCount)的使用　305
+9.4.8　方法public Userinfo update(Userinfo entity)的使用　305
+9.4.9　方法public void delete(Userinfo entity)的使用　306
+9.5　JPA核心接口介绍　306
+9.5.1　类Persistence　306
+9.5.2　JPA中的事务类型　307
+9.5.3　接口EntityManagerFactory　308
+9.5.4　接口EntityManager　308
+9.6　实体类的状态　308
+9.7　使用原生JPA的API实现1个添加记录的操作　309
+9.8　从零开始搭建JPA开发环境　309
+9.9　EntityManager核心方法的使用　311
+9.9.1　方法void persist(Object entity)保存一条记录　311
+9.9.2　 T merge(T entity)方法和 T find(Class entityClass, Object primaryKey)方法　311
+9.9.3　方法void remove(Object entity)　312
+9.9.4　getReference(Class, Object)方法　312
+9.9.5　createNativeQuery(string)方法　315
+9.9.6　clear()和contains(Object)方法　317
+9.9.7　createQuery(String)方法　319
+9.10　双向一对多的CURD实验　319
+9.10.1　逆向Main.java和Sub.java实体类　319
+9.10.2　创建Main　322
+9.10.3　创建Sub　322
+9.10.4　更新Main　323
+9.10.5　更新Sub　323
+9.10.6　删除Main时默认将Sub也一同删除　324
+9.10.7　从Main加载Sub时默认为延迟加载　324
+9.11　JPQL语言的使用　325
+9.11.1　参数索引式查询　325
+9.11.2　命名式参数查询　326
+9.11.3　JPQL支持的运算符与聚合函数与排序　326
+9.11.4　is null为空运算符的使用　327
+9.11.5　查询指定字段的示例　327
+9.11.6　JPQL语言对日期的判断　329
+9.11.7　JPQL语言中的分页功能　331
+第10章  Spring 4的DI与AOP　332
+10.1　Spring介绍　332
+10.2　依赖注入　333
+10.3　DI容器　333
+10.4　AOP的介绍　334
+10.5　Spring的架构　334
+10.6　一个使用传统方式保存数据功能的测试　335
+10.7　在Spring中创建JavaBean　336
+10.7.1　使用xml声明法创建对象　337
+10.7.2　使用Annotation注解法创建对象　340
+10.8　DI的使用　350
+10.8.1　使用xml声明法注入对象　350
+10.8.2　使用注解声明法注入对象　352
+10.8.3　多实现类的歧义性　353
+10.8.4　使用@Autowired注解向构造方法参数注入　356
+10.8.5　在set方法中使用@Autowired注解　357
+10.8.6　使用@Bean向工厂方法的参数传参　358
+10.8.7　使用@Autowired(required = false)的写法　358
+10.8.8　使用@Bean注入多个相同类型的对象时出现异常　360
+10.8.9　使用@Bean对JavaBean的id重命名　361
+10.8.10　对构造方法进行注入　362
+10.8.11　使用p命名空间对属性进行注入　368
+10.8.12　Spring上下文环境的相关知识　370
+10.8.13　使用Spring的DI方式保存数据功能的测试　375
+10.8.14　BeanFactory与ApplicationContext　377
+10.8.15　注入null类型　377
+10.8.16　注入Properties类型　378
+10.8.17　在DI容器中创建Singleton单例和Prototype多例的JavaBean对象　379
+10.8.18　Spring中注入外部属性文件的属性值　381
+10.9　面向切面编程AOP的使用　383
+10.9.1　AOP的原理之代理设计模式　384
+10.9.2　与AOP相关的**概念　391
+10.9.3　面向切面编程AOP核心案例　395
+10.9.4　Strust 2、Spring 4整合及应用AOP切面　432
+第11章  Struts 2 Hibernate 5 Spring 4整合　436
+11.1　目的　436
+11.2　创建数据库环境　436
+11.2.1　新建数据表userinfo　436
+11.2.2　创建序列对象　437
+11.3　新建整合用的Web项目　437
+11.4　添加Struts 2框架支持　437
+11.4.1　添加Struts 2框架　437
+11.4.2　在web.xml文件中注册Struts 2的过滤器　438
+11.4.3　在项目的src目录下创建struts.xml配置文件　438
+11.5　添加Hibernate 5框架支持　439
+11.6　添加Spring 4框架支持　440
+11.7　创建spring-dao.xml文件　440
+11.8　创建spring-service.xml文件　440
+11.9　创建spring-controller.xml文件　441
+11.10　创建applicationContext.xml文件　441
+11.11　在web.xml文件中注册Spring监听器　442
+11.12　加Spring 4框架后的Web项目结构　443
+11.13　创建Hibernate中的实体类与映射文件　444
+11.14　创建Hibernate 5的DAO类　445
+11.15　创建UserinfoService.java服务对象　445
+11.16　新建一个操作userinfo表数据的Controller控制层　446
+11.17　测试成功的结果　447
+11.18　测试回滚的结果　448
+第12章  Spring 4 MVC核心技能　450
+12.1　Spring 4 MVC介绍　450
+12.1.1　Spring 4 MVC核心控制器　451
+12.1.2　基于注解的Spring 4 MVC开发　452
+12.2　Spring 4 MVC**个登录测试　452
+12.2.1　添加Spring 4 MVC的依赖jar文件　452
+12.2.2　在web.xml中配置核心控制器　453
+12.2.3　新建springMVC-servlet.xml配置文件　453
+12.2.4　新建相关的JSP文件　453
+12.2.5　新建控制层Java类文件　454
+12.2.6　部署项目并运行　455
+12.2.7　**个示例的总结　456
+12.2.8　Spring MVC取参还能更加方便　456
+12.3　执行控制层与限制提交的方式　457
+12.3.1　新建控制层ListUsername.java文件　457
+12.3.2　新建登录及显示数据的JSP文件　458
+12.3.3　部署项目并测试　458
+12.4　解决多人开发路径可能重复问题　460
+12.4.1　错误的情况　460
+12.4.2　解决办法　461
+12.5　在控制层中处理指定的提交get或post方式　463
+12.5.1　控制层代码　463
+12.5.2　新建JSP文件并运行　464
+12.6　控制层重定向到控制层——无参数传递　465
+12.6.1　新建控制层Java文件　465
+12.6.2　创建JSP文件并运行项目　466
+12.7　控制层重定向到控制层——有参数传递　467
+12.7.1　创建两个控制层Java文件　467
+12.7.2　部署项目并运行　468
+12.8　匹配URL路径执行指定控制层　468
+12.8.1　新建控制层文件　468
+12.8.2　部署项目并运行　469
+12.9　在服务器端取得JSON字符串并解析——方式1　470
+12.9.1　在web.xml中配置字符编码过滤器　470
+12.9.2　新建JSP文件　471
+12.9.3　新建控制层Java文件　472
+12.9.4　添加依赖的jar包文件　472
+12.9.5　运行项目　473
+12.10　在服务器端取得JSON字符串并解析——方式2　473
+12.10.1　新建封装JSON对象属性的实体类　473
+12.10.2　新建控制层　474
+12.10.3　在配置文件中添加注解　474
+12.10.4　新建JSP文件　475
+12.10.5　添加jacksonJSON解析处理类库并运行　475
+12.10.6　解析不同格式的JSON字符串示例　476
+12.11　将URL中的参数转成实体的示例　478
+12.11.1　新建控制层文件　478
+12.11.2　新建登录用途的JSP文件　479
+12.11.3　在web.xml中注册编码过滤器　479
+12.11.4　运行结果　479
+12.12　在控制层返回JSON对象示例　479
+12.12.1　新建控制层文件　480
+12.12.2　新建JSP文件　480
+12.12.3　部署项目并运行　481
+12.13　在控制层传回JSON字符串示例　482
+12.13.1　新建控制层文件　482
+12.13.2　新建JSP文件及在配置文件中注册utf-8编码处理　482
+12.13.3　运行项目　483
+12.14　在控制层取得HttpServletRequest和HttpServletResponse对象　483
+12.14.1　新建控制层　484
+12.14.2　JSP文件中的EL代码及运行结果　484
+12.14.3　直接使用HttpServletResopnse对象输出响应字符　484
+12.15　通过URL参数访问指定的业务方法　486
+12.15.1　新建控制层文件List.java　486
+12.15.2　运行结果　487
+12.16　Spring 4 MVC单文件上传——写法1　487
+12.16.1　新建控制层　487
+12.16.2　在配置文件springMVC-servlet.xml中声明上传请求　488
+12.16.3　创建前台JSP文件　489
+12.16.4　程序运行结果　489
+12.17　Spring 4 MVC单文件上传——写法2　489
+12.18　Spring 4 MVC多文件上传　490
+12.18.1　新建控制层及JSP文件　490
+12.18.2　运行结果　491
+12.19　Spring 4 MVC支持中文文件名的文件下载　491
+12.20　控制层返回List对象及实体的效果　493
+12.20.1　新建控制层文件　493
+12.20.2　新建JSP文件　493
+12.20.3　更改springMVC-servlet.xml配置文件　494
+12.20.4　程序运行结果　494
+12.21　控制层ModelMap对象　495
+12.21.1　新建控制层　495
+12.21.2　JSP文件代码　496
+12.21.3　运行效果　496
+12.22　Spring 4 MVC提交的表单进行手动数据验证　497
+12.22.1　创建控制层文件　497
+12.22.2　创建JSP文件　497
+12.22.3　运行结果　498
+
+第13章  Spring 4 MVC**知识　499
+13.1　web.xml中的不同配置方法　499
+13.1.1　存放于src资源路径中　499
+13.1.2　指定存放路径　500
+13.1.3　指定多个配置文件　500
+13.2　路径中添加通配符的功能　501
+13.3　业务逻辑层在控制层中进行注入　502
+13.3.1　新建业务逻辑层　502
+13.3.2　创建控制层文件　502
+13.3.3　设计springMVC-servlet.xml配置文件　502
+13.3.4　程序运行结果　503
+13.3.5　多个实现类的情况　503
+13.4　对象ModelAndView的使用　504
+13.4.1　创建控制层及JSP文件　504
+13.4.2　程序运行结果　505
+13.5　控制层返回void数据的情况　505
+13.5.1　创建控制层及index.jsp文件　505
+13.5.2　更改配置文件　506
+13.5.3　部署项目运行程序　506
+13.6　使用Spring 4 MVC中的注解来操作HttpSession中的对象　507
+13.6.1　创建控制层文件PutGetSession.java　507
+13.6.2　创建显示不同作用域中的值的JSP文件　508
+13.6.3　部署项目并运行程序　508
+第14章  Spring 4 MVC MyBatis 3 Spring 4整合　509
+14.1　准备Spring 4的JAR包文件　509
+14.2　准备MyBatis的JAR包文件　510
+14.3　准备MyBatis 3与Spring 4整合的JAR文件　510
+14.4　创建Web项目　510
+14.5　配置web.xml文件　511
+14.6　配置springMVC-servlet.xml文件　512
+14.7　配置MyBatis配置文件　513
+14.8　创建MyBatis与映射有关文件　513
+14.9　配置applicationContext.xml文件　514
+14.10　创建Service对象　516
+14.11　创建Controller对象　516
+14.12　测试正常的效果　517
+14.13　测试回滚的效果　517

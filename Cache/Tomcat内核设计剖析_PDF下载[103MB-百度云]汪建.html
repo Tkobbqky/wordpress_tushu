@@ -1,0 +1,215 @@
+Tomcat内核设计剖析 PDF下载 汪建 百度云 电子书 下载 电子书下载
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711545130
+PDF电子书下载不求人，看这篇文章就够了→ http://www.chendianrong.com/pdf#711545130
+<p>书名:Tomcat内核设计剖析</p><p>作者:汪建</p><p>页数:345</p><p>定价:¥79.0</p><p>出版社:人民邮电出版社</p><p>出版日期:2017-06-01</p><p>ISBN:9787115451309</p><p><h2>本书特色</h2></p>[<p>
+Tomcat是一款免费的开源应用服务器，因其性能稳定、体积小巧、扩展性好等特点而被传统和互联网行业广泛应用。
+《Tomcat内核设计剖析》是深入剖析Tomcat Web服务器运行机制的quanwei图书，共分为22章。Tomcat内核设计剖析 从Web服务器相关的基础知识及原理开始逐渐深入Tomcat内部设计，比如涵盖了HTTP协议、Socket通信及服务器模型等bibei的基础知识。另外还包括Servlet规范，这些都是深入Tomcat必不可少的知识。然后介绍了Tomcat的启动与关闭过程，接着从整体预览Tomcat的内部结构，让读者对Tomcat内部有个整体的了解。zui后开始层层剖析Tomcat内部结构，包括Server组件，Service组件，内存泄漏检测，Connector组件（HTTP协议、AJP协议、BIO模式、NIO模式和APR模式），Engine容器，Host容器，Context容器，Wrapper容器（Servlet种类机制、Comet模式、WebSocket协议、异步Servlet），生命周期管理，日志框架及其国际化（日志系统、日志国际化及访问日志），公共与隔离的加载器（多个Web应用如何做到资源隔离），Mapper组件（局部路由、全局路由），Tomcat集成JNDI，JSP编译器（JSP语法解析、JSP编译成Servlet、Servlet编译成Class），运行及通信的安全管理，处理请求和响应的管道（管道机制），多样化的会话管理器（标准会话管理器、持久化会话管理器、集群增量会话管理器及集群备份管理器），高可用的Tomcat集群的实现（从单机到集群），Tomcat集群通信框架，Tomcat内部监控与管理。
+《Tomcat内核设计剖析》适用于想深入了解Web服务器原理、想知道在浏览器上点击某个按钮后发生的事情、想了解Tomcat内部工作原理、想基于Tomcat做二次开发的人员。
+                                        </p>]<p><h2>内容简介</h2></p>[<p>Tomcat作为一款免费的开源应用服务器，凭借技术先进、性能稳定、体积小巧、扩展性好，深受开发人员和软件开发商的认可。作者在本书中详细剖析了Tomcat的架构、内部运行机制以及相关的支撑技术。
+本书不是鼓励读者去重复发明轮子，而是希望读者能够研究开源软件的架构，学习其优良的设计理念，了解这些产品的过人之处，从而提升自己的编程素养。
+本书特色：
+深入剖析Tomcat的每一个设计要点，使读者知其然，更知其所以然；
+拒绝没营养的直接贴代码分析，而是升华到对Tomcat设计思想的剖析；
+通篇采用大量插图来辅助文字解释，降低读者的理解门槛；
+层次分明，脉络清晰，由浅入深，循序渐进，确保知识讲解的连贯性和普适性。
+通过本书能快速建立起Tomcat内核模型，对生产故障处理有很大的帮助；
+本书深入Tomcat分析，融会贯通，进而深入掌握Web服务器技术；
+学习Tomcat内部精彩的设计模式，无形之中提高读者Java编程水平。 </p>]<p><h2>作者简介</h2></p>[<p>汪建，毕业于广东工业大学光信息科学与技术专业，毕业后从事航空系统、电信系统、中间件、基础架构、智能客服等研发工作，目前主要关注分布式、高并发、大数据、搜索引擎、机器学习等方面的技术。崇尚开源，崇尚技术自由，更崇尚思想自由。个人博客地址为blog.csdn.net wangyangzhizhou。</p>]<p><h2>目录</h2></p>
+    第1章  Web服务器机制	1
+1.1　通信协议　1
+1.1.1　HTTP HTTPS　1
+1.1.2　HTTP请求 响应模型　3
+1.1.3　解析HTTP报文　4
+1.2　套接字通信　7
+1.2.1　单播通信　8
+1.2.2　组播通信　9
+1.2.3　广播通信　12
+1.3　服务器模型　13
+1.3.1　单线程阻塞I O模型　14
+1.3.2　多线程阻塞I O模型　15
+1.3.3　单线程非阻塞I O模型　16
+1.3.4　多线程非阻塞I O模型　19
+第2章　Servlet规范　22
+2.1　Servlet接口　22
+2.2　ServletRequest接口　23
+2.3　ServletContext接口　23
+2.4　ServletResponse接口　24
+2.5　Filter接口　24
+2.6　会话　25
+2.7　注解　25
+2.8　可插拔性　26
+2.9　请求分发器　26
+2.10　Web应用　26
+2.11　Servlet映射　27
+2.12　部署描述文件　28
+第3章　Tomcat的启动与关闭　29
+3.1　Tomcat的批处理　29
+3.1.1　startup.bat　29
+3.1.2　shutdown.bat　31
+3.1.3　catalina.bat　31
+3.1.4　setclasspath.bat　39
+3.2　Tomcat中的变量及属性　40
+3.2.1　环境变量　41
+3.2.2　JVM系统变量　41
+3.2.3　Tomcat属性　44
+第4章　从整体预览Tomcat　45
+4.1　整体结构及组件介绍　45
+4.2　请求处理的整体过程　50
+第5章　Server组件与Service组件　52
+5.1　Server组件　52
+5.1.1　生命周期监听器　53
+5.1.2　全局命名资源　57
+5.1.3　监听SHUTDOWN命令　58
+5.2　Service组件　59
+第6章　Connector组件　63
+6.1　HTTP阻塞模式协议—Http11Protocol　64
+6.1.1　套接字接收终端—JIoEndpoint　65
+6.1.2　HTTP阻塞处理器—Http11Processor　73
+6.2　HTTP非阻塞模式协议—Http11NioProtocol　102
+6.2.1　非阻塞接收终端—NioEndpoint　102
+6.2.2　HTTP非阻塞处理器—Http11NioProcessor　111
+6.3　HTTP APR模式协议—Http11AprProtocol　114
+6.3.1　APR接收终端—AprEndpoint　114
+6.3.2　HTTP APR处理器—Http11AprProcessor　119
+6.4　AJP Connector　121
+6.4.1　AJP阻塞模式协议—AjpProtocol　123
+6.4.2　AJP APR模式协议—AjpAprProtocol　125
+6.5　HTTP三种模式的Connector　126
+6.6　AJP三种模式的Connector　126
+第7章　Engine容器　127
+第8章　Host容器　129
+8.1　Web应用—Context　129
+8.2　访问日志—AccessLog　130
+8.3　管道—Pipeline　130
+8.4　Host集群—Cluster　130
+8.5　Host域—Realm　130
+8.6　生命周期监听器—HostConfig　131
+8.6.1　Descriptor描述符类型　131
+8.6.2　WAR包类型　132
+8.6.3　目录类型　133
+第9章　Context容器　134
+9.1　Context容器的配置文件　134
+9.2　包装器—Wrapper　135
+9.3　Context域—Realm　135
+9.4　访问日志—AccessLog　135
+9.5　错误页面—ErrorPage　135
+9.6　会话管理器—Manager　137
+9.7　目录上下文—DirContext　137
+9.8　安全认证　138
+9.9　Jar扫描器—JarScanner　138
+9.10　过滤器　139
+9.11　命名资源—NamingResource　140
+9.12　Servlet映射器—Mapper　141
+9.13　管道—Pipeline　141
+9.14　Web应用载入器—WebappLoader　142
+9.15　ServletContext的实现—ApplicationContext　143
+9.16　实例管理器—InstanceManager　145
+9.17　ServletContainerInitializer初始化器　145
+9.18　Context容器的监听器　147
+9.18.1　ContextConfig监听器　148
+9.18.2　TldConfig监听器　151
+9.18.3　NamingContextListener监听器　151
+9.18.4　MemoryLeakTrackingListener监听器　151
+第10章　Wrapper容器　154
+10.1　Servlet工作机制　154
+10.2　Servlet对象池　156
+10.3　过滤器链　157
+10.4　Servlet种类　158
+10.5　Comet模式的支持　161
+10.6　WebSocket协议的支持　163
+10.7　异步Servlet　166
+第11章　生命周期管理　169
+11.1　生命周期统一接口—Lifecycle　169
+11.2　生命周期的状态转化　170
+11.3　生命周期事件监听机制　172
+第12章　日志框架及其国际化　177
+12.1　系统内日志　177
+12.2　日志的国际化　179
+12.3　客户端访问日志　181
+12.3.1　访问日志组件的设计　182
+12.3.2　访问日志格式的自定义　184
+第13章　公共与隔离的类加载器　186
+13.1　类加载器　186
+13.2　自定义类加载器　189
+13.3　Tomcat中的类加载器　192
+13.4　类加载器工厂—ClassLoaderFactory　194
+13.5　遭遇ClassNotFoundException　196
+第14章　请求URI映射器Mapper　200
+14.1　请求的映射模型　200
+14.2　Mapper的实现　201
+14.3　局部路由Mapper　203
+14.4　全局路由Mapper　204
+第15章　Tomcat的JNDI　205
+15.1　JNDI简介　205
+15.2　JNDI运行机制　206
+15.3　在Tomcat中集成JNDI　210
+15.4　在Tomcat中使用JNDI　222
+15.4.1　Web应用的局部配置方式　222
+15.4.2　服务器的全局配置方式　223
+15.5　Tomcat的标准资源　226
+第16章　JSP编译器Jasper　227
+16.1　从JSP到Servlet　228
+16.1.1　语法树的生成—语法解析　228
+16.1.2　语法树的遍历—访问者模式　230
+16.1.3　JSP编译后的Servlet　232
+16.2　从Servlet到Class字节码　235
+16.2.1　JSR45标准　235
+16.2.2　JDT Compiler编译器　236
+16.2.3　Jasper自动检测机制　241
+第17章　运行、通信及访问的安全管理　243
+17.1　运行安全管理　243
+17.1.1　Java安全管理器—SecurityManager　243
+17.1.2　Tomcat的系统安全管理　246
+17.1.3　安全管理器特权　248
+17.2　安全的通信　249
+17.2.1　SSL TLS协议　249
+17.2.2　Java安全套接字扩展—JSSE　251
+17.2.3　Tomcat中SSL安全信道的实现　264
+17.3　客户端访问认证机制　266
+17.3.1　Web资源认证原理　266
+17.3.2　认证模式　267
+17.3.3　Realm域　272
+17.3.4　Tomcat如何实现资源安全管理　273
+17.3.5　如何让你的Web具备权限认证　274
+第18章　处理请求和响应的管道　276
+18.1　管道模式—管道与阀门　276
+18.2　Tomcat中的管道　280
+18.3　Tomcat中的定制阀门　282
+第19章　多样化的会话管理器　285
+19.1　Web容器的会话机制　286
+19.2　标准会话对象—StandardSession　287
+19.3　增量会话对象—DeltaSession　288
+19.4　标准会话管理器—StandardManager　290
+19.5　持久化会话管理器—PersistentManager　291
+19.5.1　FileStore　292
+19.5.2　JDBCStore　293
+19.6　集群增量会话管理器—DeltaManager　294
+19.7　集群备份会话管理器—BackupManager　296
+19.7.1　机制与原理　297
+19.7.2　高可用性及故障转移机制　299
+19.7.3　集群RPC通信　301
+19.8　Tomcat会话管理器的集成　308
+第20章　高可用的集群实现　311
+20.1　从单机到集群的会话管理　311
+20.1.1　单机模式　311
+20.1.2　集群模式　313
+20.2　Cluster组件　315
+20.3　Tomcat的Cluster工作机制　317
+20.4　Tomcat中Cluster的级别　318
+20.5　如何让Tomcat实现集群功能　318
+第21章　集群通信框架　320
+21.1　Tribes简介　320
+21.2　集群成员维护服务—MembershipService　321
+21.3　平行的消息发送通道—ChannelSender　325
+21.4　消息接收通道—ChannelReceiver　327
+21.5　通道拦截器—ChannelInterceptor　328
+21.6　应用层处理入口—MembershipListener与ChannelListener　331
+21.7　如何使用Tribes进行数据传输　332
+21.8　Tomcat使用Tribes同步会话　334
+21.9　Tomcat使用Tribes部署集群应用　334
+第22章　监控与管理　337
+22.1　Java管理扩展—JMX　337
+22.1.1　JMX的基本结构　337
+22.1.2　JMX例子　338
+22.2　JMX管理下的Tomcat　339
+22.3　ManagerServlet　343
